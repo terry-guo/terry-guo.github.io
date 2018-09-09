@@ -123,11 +123,121 @@ INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
 
 ![](hexo搭建博客/01.png)
 
+## 5.案例
+
+下面以material主题为例介绍我的配置过程
+
+### 5.1 安装Materia
+
+- 方法一：git clone
+
+```
+cd themes
+git clone https://github.com/viosey/hexo-theme-material.git
+```
+
+在我实测中，这种方法没有成功，应该是我本身的网络问题。这时候我使用了第二种方法
+
+- 方法二：使用npm安装
+
+```
+npm install hexo-material
+```
+
+安装完毕后，首先在 hexo 目录下的 themes 文件夹中新建一个文件夹 material ，之后在 hexo 目录下的 node_modules 文件夹中找到 hexo-material 文件夹，然后把里面的全部文件复制到 materia 文件夹里。 
+
+**注意！！！** 需要将 materia 主题下的配置文件 _config.template.yml 重命名为 _config.yml。 然后打开**站点配置文件**（根目录的 _config.yml文件），查找 theme 参数并修改为 materia 
+
+```
+theme: material
+```
 
 
-## 5.发布
+
+这时候运行
+
+```
+hexo s 
+```
+
+即可进行预览
+
+### 5.2配置主题
+
+在主题文件夹`material`文件夹中修改配置。贴出部分配置的介绍
+
+~~~
+Material 主题配置文件（节选）# Head info
+head:
+    favicon: "/img/favicon.png" #网站的 favicon
+    high_res_favicon: "/img/favicon.png"  #高清 favicon
+    apple_touch_icon: "/img/favicon.png" #iOS 主屏按钮图标
+    keywords: blog web 前端 #网站关键词
+url:
+    rss:   #设置生成的 rss 或 atom url
+    daily_pic: "https://zhouxiaoyu1994.github.io/FCC2017/resume/index.html"  #设置 daily_pic 模块 点击时跳转的 url
+    logo: "https://github.com/zhouxiaoyu1994"  #设置 logo 点击时跳转的 url
+scheme: Paradox #主题外观（默认）
+uiux:
+    slogan: "前端作品集"  #显示在 blog_info 模块中的标语，你可以设置单行标语或者多行标语：
+    theme_color: "#0097A7"  #主题主要颜色。主题的大部分地方使用此颜色。
+    theme_sub_color: "#00838F" #主题辅助颜色。
+    hyperlink_color: "#00838F" #超链接颜色。
+    button_color: "#757575" #按钮颜色，例如 toTop 或 menu_button。
+    android_chrome_color: "#0097A7" #安卓 Chrome 浏览器的地址栏颜色。
+    nprogress_color: "#29d" #页面加载时顶部加载进度条的颜色。
+    nprogress_buffer: "800" #页面加载时顶部加载进度条的缓冲时间。
+~~~
+
+
+
+### 5.3添加站点搜索功能
+
+使用本地搜索需要安装 [hexo-generator-search](https://link.jianshu.com/?t=https://github.com/PaicHyperionDev/hexo-generator-search) 插件。 这个插件生成Hexo 3.0的搜索数据。此插件用于生成搜索索引文件，其中包含您可以用来为您的博客编写本地搜索引擎的文章的所有必要数据。支持XML和JSON格式输出。 
+
+然后在 **站点配置文件**中添加 
+
+~~~
+search:
+path: search.xml
+field: all
+~~~
+
+然后根目录运行下面命令，将在公共文件夹中获取生成的结果。 
+
+~~~
+hexo g
+~~~
+
+
+
+
+
+
+
+## 6.发布
+
+- 1.安装hexo-deployer-git 
+
+~~~
+npm install hexo-deployer-git --save
+~~~
+
+- 2.在站点配置文件里面配置git仓库地址
+
+~~~
+deploy:
+  type: git 
+  repository: https://github.com/terry-guo/terry-guo.github.io.git
+  branch: master
+
+
+~~~
+
+- 3.部署到github 
 
 ~~~
 hexo d -g发布
 ~~~
 
+- 4.访问下https://terry-guo.github.io/。试试（terry-guo是我的用户名） 
