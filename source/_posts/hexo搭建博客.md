@@ -1,5 +1,5 @@
 ---
-title: hexo搭建个人博客步骤
+title: hexo搭建个人博客
 date: 2018-08-29 22:13:10
 tags:
 ---
@@ -211,11 +211,21 @@ hexo g
 
 
 
+## 6.写作与发布
+
+### 6-1新建博客
+
+~~~
+hexo new '新建博客'
+~~~
+
+这时候会在 ./source./\_posts 路径里面有个叫‘新建博客’的md文件和文件夹，文件夹是用来放静态资源
 
 
 
+### 6-2 发布
 
-## 6.发布
+
 
 - 1.安装hexo-deployer-git 
 
@@ -241,3 +251,67 @@ hexo d -g发布
 ~~~
 
 - 4.访问下https://terry-guo.github.io/。试试（terry-guo是我的用户名） 
+
+
+
+
+
+
+
+目前只是初步形态，后续将会继续优化，完善各方面功能。
+
+
+
+## 7、拓展功能
+
+### 7-1加一个动态背景效果
+
+在material主题文件的`layout`文件夹中的index.ejs和post.ejs中引入这样一段代码
+
+~~~
+ <script>
+            //背景线条
+            !function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();;
+            
+            </script>
+~~~
+
+这样页面背景中就多了一个线条跟随鼠标动的动态效果。至于要改变背景颜色图片什么的，就找到对应的标签去写样式覆盖。
+
+### 7-2 加入Q版看板娘
+
+参考这个
+
+> https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md
+
+安装模块
+
+~~~
+npm install --save hexo-helper-live2d
+~~~
+
+然后安装具体的模型（我比较喜欢这里面的2个）
+
+~~~
+npm install --save live2d-widget-model-shizuku
+npm install --save live2d-widget-model-miku
+~~~
+
+然后在根目录的`config.yml`文件中加入下面一段
+
+~~~
+#萌萌哒的日本动漫图
+live2d:
+  model: 
+  		#这里设置的use就是你要用的那个模型
+      use: live2d-widget-model-shizuku
+      #use: live2d-widget-model-miku
+  display:
+    position: right
+    bottom: -60
+    width: 120
+    height: 240
+  mobile:
+    show: true
+~~~
+

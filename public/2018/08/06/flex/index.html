@@ -94,7 +94,7 @@
 
     <!-- Import CSS -->
     
-        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?HAypri2PqlXVOdfME4jhig==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
@@ -496,10 +496,14 @@
 <p>​      FlexBox布局<strong>更多的用到</strong>移动端<strong>，PC端除了</strong>盒子模型<strong>布局，也支持</strong>FlexBox<strong>布局 , FlexBox布局将会是成为</strong>未来开发的主流技术，将在移动端体现的最明显。</p>
 <p>​    采用 Flex 布局的元素，称为 Flex 容器（flex container），简称”容器”。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称”项目”。</p>
 <p>​    html部分：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;box&quot;&gt;</span><br><span class="line">       &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;</span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>​    css部分：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">    display: flex;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>上面就是一个最简单的flex布局，任何元素都能设置flex布局。行内元素写作<code>display:inline-flex</code>。</p>
+<pre><code>&lt;div class=&quot;box&quot;&gt;
+       &lt;div class=&quot;box1&quot;&gt;&lt;/div&gt;
+ &lt;/div&gt;
+</code></pre><p>​    css部分：</p>
+<pre><code> .box{
+     display: flex;
+   }
+</code></pre><p>上面就是一个最简单的flex布局，任何元素都能设置flex布局。行内元素写作<code>display:inline-flex</code>。</p>
 <p>注意，设为 Flex 布局以后，子元素的<code>float</code>、<code>clear</code>和 <code>vertical-align</code>属性将失效。</p>
 <ul>
 <li>​</li>
@@ -531,28 +535,28 @@ column-reverse：主轴为垂直方向，起点在下沿。
 </code></pre><p><img src="/2018/08/06/flex/003.png" alt="0"></p>
 <h5 id="2-justifyContent"><a href="#2-justifyContent" class="headerlink" title="2.justifyContent"></a>2.justifyContent</h5><p><strong><code>flex-start | flex-end | center | space-between | space-around</code></strong></p>
 <p><strong>规定：子item在主轴方向的对齐方式</strong></p>
-<pre><code>flex-start(默认值)：伸缩项目向一行的起始位置靠齐。
+<pre><code>  flex-start(默认值)：伸缩项目向一行的起始位置靠齐。
 
-flex-end：伸缩项目向一行的结束位置靠齐。
+  flex-end：伸缩项目向一行的结束位置靠齐。
 
-center：伸缩项目向一行的中间位置靠齐。
+  center：伸缩项目向一行的中间位置靠齐。
 
-space-between：两端对齐，项目之间的间隔都相等。
+  space-between：两端对齐，项目之间的间隔都相等。
 
-space-around：伸缩项目会平均地分布在行里，两端保留一半的空间。
+  space-around：伸缩项目会平均地分布在行里，两端保留一半的空间。
 </code></pre><p>  <strong>下图灰色为背景,主轴方向为水平，侧轴方向为垂直</strong>：</p>
 <p><img src="/2018/08/06/flex/004.png" alt="0"></p>
 <h5 id="3-alignItems"><a href="#3-alignItems" class="headerlink" title="3.alignItems"></a>3.alignItems</h5><p><code>flex-start | flex-end | center | baseline | stretch</code></p>
 <p><strong>规定：子item在侧轴方向的对齐方式</strong></p>
-<pre><code>flex-start：交叉轴的起点对齐。
+<pre><code>  flex-start：交叉轴的起点对齐。
 
-flex-end：交叉轴的终点对齐 。
+  flex-end：交叉轴的终点对齐 。
 
-center：交叉轴的中点对齐。
+  center：交叉轴的中点对齐。
 
-baseline：项目的第一行文字的基线对齐。
+  baseline：项目的第一行文字的基线对齐。
 
-stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+  stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 </code></pre><p><strong>下图灰色为背景，主轴方向是水平，侧轴方向是垂直</strong></p>
 <p><img src="/2018/08/06/flex/005.png" alt="0"></p>
 <h5 id="4-flexWrap"><a href="#4-flexWrap" class="headerlink" title="4.flexWrap"></a>4.flexWrap</h5><p><strong><code>nowrap | wrap | wrap-reverse</code></strong></p>
@@ -569,11 +573,11 @@ stretch（默认值）：如果项目未设置高度或设为auto，将占满整
 <p><img src="/2018/08/06/flex/10.png" alt="0"></p>
 <p>权重分别：1，1，1 和1、3、1</p>
 <h5 id="2-align-self"><a href="#2-align-self" class="headerlink" title="2.align-self"></a>2.align-self</h5><p>align-self属性允许单个item有与其他item不一样的对齐方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align-self: auto | flex-start | flex-end | center | baseline | stretch;</span><br></pre></td></tr></table></figure>
-<p>这个属性没有用过，暂时只做简单了解。</p>
+<pre><code>align-self: auto | flex-start | flex-end | center | baseline | stretch;
+</code></pre><p>这个属性没有用过，暂时只做简单了解。</p>
 <h2 id="三、其他"><a href="#三、其他" class="headerlink" title="三、其他"></a>三、其他</h2><p>最近又了解到一个新的flex属性，order：弹性元素根据自身order的值来进行排序 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">order:1</span><br></pre></td></tr></table></figure>
-<p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。我们可以很容易的给每个伸缩项目设置不同的顺序值。更高的值会排在后面，而原来的HTML结构并不会有任何变化。</p>
+<pre><code>order:1
+</code></pre><p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。我们可以很容易的给每个伸缩项目设置不同的顺序值。更高的值会排在后面，而原来的HTML结构并不会有任何变化。</p>
 <p>下图就是改变了order属性，默认从左到右容器的排列顺序是A-B-C，通过改变order值，可以调整他们的显示位置。</p>
 <p><img src="/2018/08/06/flex/12.png" alt="0"></p>
 <p>下图是所有的flex属性表，部分属性平时不太常用，平时了解不多，这里也不做过多介绍。感兴趣的小伙伴可以自己去了解哦。</p>
@@ -624,6 +628,15 @@ stretch（默认值）：如果项目未设置高度或设为auto，将占满整
 
         </div>
     </div>
+
+
+
+<script>
+        //背景线条
+        !function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();;
+        
+        </script>
+
 
 
 
@@ -704,7 +717,7 @@ stretch（默认值）：如果项目未设置高度或设为auto，将占满整
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -992,6 +1005,6 @@ console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viose
 
                 </main>
             </div>
-        </body>
+        <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","bottom":-60,"width":120,"height":240},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
     
 </html>

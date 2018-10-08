@@ -1,8 +1,10 @@
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
-
+#自定义背景线条是否显示
+#sportLine: true
 # Head info
+
 head:
     favicon: "/img/favicon.png"
     high_res_favicon: "/img/favicon.png"

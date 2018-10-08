@@ -94,7 +94,7 @@
 
     <!-- Import CSS -->
     
-        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?HAypri2PqlXVOdfME4jhig==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
@@ -504,8 +504,13 @@
 <li>如果当前元素的父级元素没有进行CSS定位（position：absolute 或 relative），则其offsetParent为<strong>body；</strong> 如果当前元素的父级元素中有CSS定位（position：absolute或relative），offsetParent取<strong>最近的那个父级元素</strong>。</li>
 </ul>
 <h3 id="1-4、offsetXXX-和-style-XXX的区别"><a href="#1-4、offsetXXX-和-style-XXX的区别" class="headerlink" title="1-4、offsetXXX 和 style.XXX的区别"></a>1-4、offsetXXX 和 style.XXX的区别</h3><p>用offsetLeft和style.left来分析，其他的以此类推： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a) style.left只能获取行内的，而offsetLeft则可以获取到所有的；</span><br><span class="line">b) offsetLeft 可以返回没有定位盒子距离左侧的位置；而style.left不可以，其只能返回有定位盒子的left;</span><br><span class="line">c) offsetLeft 返回的是数字，而 style.left 返回的是字符串，除了数字外还带有单位：px;</span><br><span class="line">   注意：可以用parseInt进行转化；比如：styleLeft=&apos;300px&apos; ---&gt; parseInt(styleLft) ---&gt; 300</span><br><span class="line">d) offsetLeft是只读的，而style.left是可读写；</span><br><span class="line">e) 如果没有给 当前 元素指定过 top 样式，则 style.top 返回的是空字符串。</span><br></pre></td></tr></table></figure>
-<h2 id="2、scroll家族"><a href="#2、scroll家族" class="headerlink" title="2、scroll家族"></a>2、scroll家族</h2><ul>
+<pre><code>a) style.left只能获取行内的，而offsetLeft则可以获取到所有的；
+b) offsetLeft 可以返回没有定位盒子距离左侧的位置；而style.left不可以，其只能返回有定位盒子的left;
+c) offsetLeft 返回的是数字，而 style.left 返回的是字符串，除了数字外还带有单位：px;
+   注意：可以用parseInt进行转化；比如：styleLeft=&#39;300px&#39; ---&gt; parseInt(styleLft) ---&gt; 300
+d) offsetLeft是只读的，而style.left是可读写；
+e) 如果没有给 当前 元素指定过 top 样式，则 style.top 返回的是空字符串。
+</code></pre><h2 id="2、scroll家族"><a href="#2、scroll家族" class="headerlink" title="2、scroll家族"></a>2、scroll家族</h2><ul>
 <li>网页正文全文宽： document.body.scrollWidth;</li>
 <li>网页正文全文高： document.body.scrollHeight;</li>
 <li>网页被卷去的高： document.body.scrollTop;</li>
@@ -515,17 +520,21 @@
 <h3 id="2-1、处理scroll家族浏览器适配问题"><a href="#2-1、处理scroll家族浏览器适配问题" class="headerlink" title="2-1、处理scroll家族浏览器适配问题"></a>2-1、处理scroll家族浏览器适配问题</h3><ul>
 <li><strong>ie9+ 和 最新浏览器</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">window.pageXOffset; （scrollLeft）</span><br><span class="line"></span><br><span class="line">window.pageYOffset; （scrollTop）</span><br></pre></td></tr></table></figure>
-<ul>
+<pre><code>    window.pageXOffset; （scrollLeft）
+
+    window.pageYOffset; （scrollTop）
+</code></pre><ul>
 <li><p><strong>Firefox浏览器 和 其他浏览器</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.documentElement.scrollTop;</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>document.documentElement.scrollTop;
+</code></pre></li>
 <li><p><strong>Chrome浏览器 和 没有声明 DTD <doctype></doctype></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.body.scrollTop;</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>document.body.scrollTop;
+</code></pre></li>
 <li><p><strong>兼容写法</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; </span><br><span class="line"></span><br><span class="line">var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code> var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; 
+
+ var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
+</code></pre></li>
 </ul>
 <h3 id="2-1、scrollTo-x-y"><a href="#2-1、scrollTo-x-y" class="headerlink" title="2-1、scrollTo(x,y)"></a>2-1、scrollTo(x,y)</h3><ul>
 <li>把内容滚动到指定的坐标</li>
@@ -583,16 +592,34 @@
 </ul>
 <h2 id="三、获取屏幕的可视区域"><a href="#三、获取屏幕的可视区域" class="headerlink" title="三、获取屏幕的可视区域"></a>三、获取屏幕的可视区域</h2><ul>
 <li><p>ie9及其以上的版本、最新浏览器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">window.innerWidth, window.innerHeight</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>window.innerWidth, window.innerHeight
+</code></pre></li>
 <li><p>标准模式浏览器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.documentElement.clientWidth, document.documentElement.clientHeight</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>document.documentElement.clientWidth, document.documentElement.clientHeight
+</code></pre></li>
 <li><p>怪异模式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.body.clientWidth, document.body.clientHeight</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>document.body.clientWidth, document.body.clientHeight
+</code></pre></li>
 <li><p>通用写法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function client() &#123;</span><br><span class="line">       if(window.innerWidth)&#123; // ie9及其以上的版本</span><br><span class="line">           return&#123;</span><br><span class="line">               width: window.innerWidth,</span><br><span class="line">               height:  window.innerHeight</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;else if(document.compatMode != &apos;CSS1Compat&apos;)&#123;  // 怪异模式</span><br><span class="line">           return&#123;</span><br><span class="line">               width: document.body.clientWidth,</span><br><span class="line">               height: document.body.clientHeight</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       // 标准</span><br><span class="line">       return&#123;</span><br><span class="line">             width: document.documentElement.clientWidth,</span><br><span class="line">             height: document.documentElement.clientHeight</span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<pre><code>function client() {
+       if(window.innerWidth){ // ie9及其以上的版本
+           return{
+               width: window.innerWidth,
+               height:  window.innerHeight
+           }
+       }else if(document.compatMode != &#39;CSS1Compat&#39;){  // 怪异模式
+           return{
+               width: document.body.clientWidth,
+               height: document.body.clientHeight
+           }
+       }
+       // 标准
+       return{
+             width: document.documentElement.clientWidth,
+             height: document.documentElement.clientHeight
+       }
+}
+</code></pre></li>
 </ul>
 
         
@@ -640,6 +667,15 @@
 
         </div>
     </div>
+
+
+
+<script>
+        //背景线条
+        !function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();;
+        
+        </script>
+
 
 
 
@@ -720,7 +756,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -1008,6 +1044,6 @@ console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viose
 
                 </main>
             </div>
-        </body>
+        <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","bottom":-60,"width":120,"height":240},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
     
 </html>
