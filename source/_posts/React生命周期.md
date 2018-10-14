@@ -306,3 +306,26 @@ componentWillUnMount () {
 新的`getSnapshotBeforeUpdate`生命周期在更新之前被调用（例如，在DOM被更新之前）。此生命周期的返回值将作为第三个参数传递给`componentDidUpdate`。 （这个生命周期不是经常需要的，但可以用于在恢复期间手动保存滚动位置的情况。）
 
 与`componentDidUpdate`一起，这个新的生命周期将覆盖旧版`componentWillUpdate`的所有用例。
+
+
+
+# 11.生命周期各函数的调用顺序
+
+
+
+![img](React生命周期\react-01.jpg)
+
+
+
+1. `getDefaultProps()`，调用1次
+2. `getInitialState()`，调用1次
+3. `componentWillMount()`，调用1次
+4. `render()`，调用>=1次
+5. `componentDidMount()`：仅客户端，调用1次
+6. `componentWillReceiveProps(object nextProps)`，调用>=0次
+7. `ShouldComponentUpdate(object nextProps, object nextState)`，调用>=0次
+8. `componentWillUpdate(object nextProps, object nextState)`，调用>=0次
+9. `render()`，调用>=1次
+10. `componentDidUpdate(object prevProps, object prevState)`，调用>=0次
+11. `componentWillUnmount()`，调用1次
+

@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://terry-guo.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,4 +104,5 @@ live2d:
     width: 120
     height: 240
   mobile:
-    show: true
+    show: false
+    scale: 0.5

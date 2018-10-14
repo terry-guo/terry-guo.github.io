@@ -1585,7 +1585,9 @@ input.mdl-button[type="submit"] {
 .mdl-layout__container {
   position: absolute;
   width: 100%;
-  height: 100%
+  height: 100%;
+  /* background-image: url('/img/bg.png');    
+  background-repeat: repeat !important;  */
 }
 
 .mdl-layout-title {
