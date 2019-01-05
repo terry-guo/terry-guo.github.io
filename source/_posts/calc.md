@@ -25,13 +25,15 @@ tags:
 **5、vw、vh、vmin、vmax** 主要用于页面视口大小布局，相对于rem;v*在页面布局上更加方便简单
 
 ​	vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
-	vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。
-	vmin：vw和vh中较小的那个。
-	vmax：vw和vh中较大的那个。
+​	vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。
+​	vmin：vw和vh中较小的那个。
+​	vmax：vw和vh中较大的那个。
 
 兼容性：**vw, vh, vmin, vmax：IE9+局部支持，chrome/firefox/safari/opera支持，ios safari 8+支持，android browser4.4+支持，chrome for android39支持**
 
 ![0](calc/a1.png)
+
+
 
 
 
