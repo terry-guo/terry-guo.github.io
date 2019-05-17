@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html style="display: none;" lang="zh">
-    <head><meta name="generator" content="Hexo 3.8.0">
+    <head>
     <meta charset="utf-8">
     <!--
         © Material Theme
@@ -45,7 +45,7 @@
     <!-- Meta & Info -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no"/>
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Terry Guo">
     <meta name="description" itemprop="description" content="只要思想不滑坡，办法总比困难多！">
@@ -230,32 +230,32 @@
 
     <!-- Import jQuery -->
     
-        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
     
 
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://terry-guo.github.io">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="flex弹行布局 | 小鱼干喜欢猫">
-    <meta property="og:image" content="https://terry-guo.github.io/img/favicon.png">
+    <meta property="og:image" content="https://terry-guo.github.io/img/favicon.png" />
     <meta property="og:description" content="只要思想不滑坡，办法总比困难多！">
     
 
     
-        <meta property="article:published_time" content="Mon Aug 06 2018 12:13:10 GMT+0800">
-        <meta property="article:modified_time" content="Thu Dec 20 2018 01:47:14 GMT+0800">
+        <meta property="article:published_time" content="Mon Aug 06 2018 12:13:10 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Oct 13 2018 11:01:41 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
     <meta name="twitter:title" content="flex弹行布局 | 小鱼干喜欢猫">
     <meta name="twitter:description" content="只要思想不滑坡，办法总比困难多！">
     <meta name="twitter:image" content="https://terry-guo.github.io/img/favicon.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://terry-guo.github.io">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://terry-guo.github.io" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://terry-guo.github.io/2018/08/06/flex/index.html">
+        <link rel="canonical" href="https://terry-guo.github.io/2018/08/06/flex/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -270,7 +270,7 @@
     "mainEntityOfPage": "https://terry-guo.github.io/2018/08/06/flex/index.html",
     "headline": "flex弹行布局",
     "datePublished": "Mon Aug 06 2018 12:13:10 GMT+0800",
-    "dateModified": "Thu Dec 20 2018 01:47:14 GMT+0800",
+    "dateModified": "Sat Oct 13 2018 11:01:41 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Terry Guo",
@@ -354,12 +354,13 @@
     <!-- Left aligned menu below button -->
     
     
-    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
         <i class="material-icons">format_list_numbered</i>
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、弹性布局介绍"><span class="post-toc-text">一、弹性布局介绍</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、基础篇"><span class="post-toc-text">二、基础篇</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#01、什么是Flex布局？"><span class="post-toc-text">01、什么是Flex布局？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#02、Flex布局的思想"><span class="post-toc-text">02、Flex布局的思想</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#03-、容器的属性"><span class="post-toc-text">03 、容器的属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-flexDirection"><span class="post-toc-text">1.flexDirection</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-justifyContent"><span class="post-toc-text">2.justifyContent</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-alignItems"><span class="post-toc-text">3.alignItems</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-flexWrap"><span class="post-toc-text">4.flexWrap</span></a></li></ol></li></ol></li></ol><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#04、元素的属性"><span class="post-toc-text">04、元素的属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-flex"><span class="post-toc-text">1.flex</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-align-self"><span class="post-toc-text">2.align-self</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、其他"><span class="post-toc-text">三、其他</span></a></li>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、弹性布局介绍"><span class="post-toc-text">一、弹性布局介绍</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、基础篇"><span class="post-toc-text">二、基础篇</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#01、什么是Flex布局？"><span class="post-toc-text">01、什么是Flex布局？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#02、Flex布局的思想"><span class="post-toc-text">02、Flex布局的思想</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#03-、容器的属性"><span class="post-toc-text">03 、容器的属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-flexDirection"><span class="post-toc-text">1.flexDirection</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-justifyContent"><span class="post-toc-text">2.justifyContent</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-alignItems"><span class="post-toc-text">3.alignItems</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-flexWrap"><span class="post-toc-text">4.flexWrap</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#04、元素的属性"><span class="post-toc-text">04、元素的属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-flex"><span class="post-toc-text">1.flex</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-align-self"><span class="post-toc-text">2.align-self</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、其他"><span class="post-toc-text">三、其他</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -405,7 +406,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="/images/avatar.jpg" width="44px" height="44px" alt="Author Avatar">
+        <img src="/images/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -607,7 +608,7 @@ column-reverse：主轴为垂直方向，起点在下沿。
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/08/06/react-native/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/08/17/document-referrer的认识/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -621,7 +622,7 @@ column-reverse：主轴为垂直方向，起点在下沿。
 
     <!-- Next Nav -->
     
-        <a href="/2018/07/29/meiti/" id="post_nav-older" class="next-content">
+        <a href="/2018/08/06/calc/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -722,8 +723,8 @@ column-reverse：主轴为垂直方向，起点在下沿。
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
-            </li></ul>
+                <a class="sidebar_archives-link" href="/archives/2019/05/">五月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/02/">二月 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">一月 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/10/">十月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">1</span></a>
+            </ul>
         </li>
         
     
@@ -757,7 +758,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Theme Material -->
 
-    <a href="https://github.com/viosey/hexo-theme-material" class="sidebar-footer-text-a" target="_blank">
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
         <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
             主题 - Material
             <span class="sidebar-badge badge-circle">i</span>
@@ -888,7 +889,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
                     <!-- Import JS File -->
 
-    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
 
 
 

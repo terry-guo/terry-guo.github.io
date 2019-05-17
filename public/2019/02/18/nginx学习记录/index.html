@@ -37,7 +37,7 @@
     
     <title>
         
-            React生命周期 | 
+            nginx学习记录--前端配置nginx实现跨域 | 
         
         小鱼干喜欢猫
     </title>
@@ -236,18 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://terry-guo.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="React生命周期 | 小鱼干喜欢猫">
+    <meta property="og:title" content="nginx学习记录--前端配置nginx实现跨域 | 小鱼干喜欢猫">
     <meta property="og:image" content="https://terry-guo.github.io/img/favicon.png" />
     <meta property="og:description" content="只要思想不滑坡，办法总比困难多！">
     
 
     
-        <meta property="article:published_time" content="Sun Oct 07 2018 19:16:08 GMT+0800" />
-        <meta property="article:modified_time" content="Sat Jan 05 2019 16:41:47 GMT+0800" />
+        <meta property="article:published_time" content="Mon Feb 18 2019 12:02:55 GMT+0800" />
+        <meta property="article:modified_time" content="Mon Feb 18 2019 16:56:06 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="React生命周期 | 小鱼干喜欢猫">
+    <meta name="twitter:title" content="nginx学习记录--前端配置nginx实现跨域 | 小鱼干喜欢猫">
     <meta name="twitter:description" content="只要思想不滑坡，办法总比困难多！">
     <meta name="twitter:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -255,7 +255,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://terry-guo.github.io/2018/10/07/React生命周期/index.html" />
+        <link rel="canonical" href="https://terry-guo.github.io/2019/02/18/nginx学习记录/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -267,10 +267,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://terry-guo.github.io/2018/10/07/React生命周期/index.html",
-    "headline": "React生命周期",
-    "datePublished": "Sun Oct 07 2018 19:16:08 GMT+0800",
-    "dateModified": "Sat Jan 05 2019 16:41:47 GMT+0800",
+    "mainEntityOfPage": "https://terry-guo.github.io/2019/02/18/nginx学习记录/index.html",
+    "headline": "nginx学习记录--前端配置nginx实现跨域",
+    "datePublished": "Mon Feb 18 2019 12:02:55 GMT+0800",
+    "dateModified": "Mon Feb 18 2019 16:56:06 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Terry Guo",
@@ -360,7 +360,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-constructor"><span class="post-toc-text">1.constructor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-componentWillMount-（组件将要挂载）"><span class="post-toc-text">2.componentWillMount （组件将要挂载）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-componentDidMount（组件渲染完成）"><span class="post-toc-text">3.componentDidMount（组件渲染完成）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-componentWillReceiveProps-nextProps"><span class="post-toc-text">4.componentWillReceiveProps (nextProps)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#5-shouldComponentUpdate-nextProps-nextState"><span class="post-toc-text">5.shouldComponentUpdate(nextProps,nextState)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#6-componentWillUpdate-nextProps-nextState"><span class="post-toc-text">6.componentWillUpdate (nextProps,nextState)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#7-render函数"><span class="post-toc-text">7.render函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#8-componentDidUpdate"><span class="post-toc-text">8.componentDidUpdate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#9-componentWillUnmount"><span class="post-toc-text">9.componentWillUnmount</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#10-React16新增的生命周期"><span class="post-toc-text">10.React16新增的生命周期</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-1-getDerivedStateFromProps"><span class="post-toc-text">10-1.getDerivedStateFromProps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-2、getSnapshotBeforeUpdate"><span class="post-toc-text">10-2、getSnapshotBeforeUpdate</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#11-生命周期各函数的调用顺序"><span class="post-toc-text">11.生命周期各函数的调用顺序</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前端配置nginx实现跨域"><span class="post-toc-text">前端配置nginx实现跨域</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-什么是nginx"><span class="post-toc-text">1.什么是nginx</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-nginx安装"><span class="post-toc-text">2.nginx安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-windows版："><span class="post-toc-text">2-1 windows版：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-mac版"><span class="post-toc-text">2-2 mac版</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-nginx配置"><span class="post-toc-text">3.nginx配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1-配置详解"><span class="post-toc-text">3-1 配置详解</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1实战练习"><span class="post-toc-text">3-1实战练习</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-3-rewrite"><span class="post-toc-text">3-3 rewrite</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-4-location"><span class="post-toc-text">3-4 location</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -392,7 +392,7 @@
         
     
             <p class="article-headline-p">
-                React生命周期
+                nginx学习记录--前端配置nginx实现跨域
             </p>
         </div>
 
@@ -411,7 +411,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Terry Guo</strong>
-        <span>10月 07, 2018</span>
+        <span>2月 18, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -442,7 +442,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=React生命周期&url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=nginx学习记录--前端配置nginx实现跨域&url=https://terry-guo.github.io/2019/02/18/nginx学习记录/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -451,7 +451,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React生命周期&url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html&via=Terry Guo" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=nginx学习记录--前端配置nginx实现跨域&url=https://terry-guo.github.io/2019/02/18/nginx学习记录/index.html&via=Terry Guo" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -460,7 +460,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2018/10/07/React生命周期/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2019/02/18/nginx学习记录/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -469,7 +469,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2019/02/18/nginx学习记录/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -493,209 +493,378 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>​    一直没有梳理过react中的生命周期，因为平时常用的生命周期就那么几个，今天就系统的了解一下react中用到的生命周期。</p>
-<p>​    下面看一下一个组件的基本构造。</p>
-<pre><code>import React,{ Component } from &#39;react&#39;;
-
-class NewDemo extends Component {
-  constructor(props,context) {
-      super(props,context)
-      this.state = {
-          //定义state
-      }
-  }
-componentWillMount () {
-}
-componentDidMount () {
-}
-componentWillReceiveProps (nextProps) {
-}
-shouldComponentUpdate (nextProps,nextState) {
-}
-componentWillUpdate (nextProps,nextState) {
-}
-componentDidUpdate (prevProps,prevState) {
-}
-render () {
-    return (
-        &lt;div&gt;&lt;/div&gt;
-    )
-}
-componentWillUnmount () {
-}
-}
-export default NewDemo;
-</code></pre><ul>
-<li><p>React 16.3 新增的生命周期方法</p>
-<p>​    1.getDerivedStateFromProps()</p>
-<p>​    2.getSnapshotBeforeUpdate()</p>
-</li>
-</ul>
+        <h2 id="前端配置nginx实现跨域"><a href="#前端配置nginx实现跨域" class="headerlink" title="前端配置nginx实现跨域"></a>前端配置nginx实现跨域</h2><blockquote>
+<p>前言：以前做过jsonp实现跨域，不过这种需要服务端配合。现在的前端项目，比如vue，react等，在配置项目的脚手架中就带有跨域设置，也可以自己写一个node服务来跨域，今天来简单学习一下用nginx来实现跨域。</p>
+</blockquote>
+<h2 id="1-什么是nginx"><a href="#1-什么是nginx" class="headerlink" title="1.什么是nginx"></a>1.什么是nginx</h2><p>nginx是一个高性能的HTTP和反向代理<a href="https://www.baidu.com/s?wd=%E6%9C%8D%E5%8A%A1%E5%99%A8&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">服务器</a>，也是一个IMAP/POP3/SMTP代理服务器。 nginx的作用是:反向代理，负载均衡。其特点是占有内存少，并发能力强。 </p>
+<h2 id="2-nginx安装"><a href="#2-nginx安装" class="headerlink" title="2.nginx安装"></a>2.nginx安装</h2><h3 id="2-1-windows版："><a href="#2-1-windows版：" class="headerlink" title="2-1 windows版："></a>2-1 windows版：</h3><blockquote>
+<p>nginx下载地址：<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">http://nginx.org/en/download.html</a> </p>
+</blockquote>
+<p>nginx官网提供了三个类型的版本：</p>
 <ul>
-<li><p>逐渐废弃的生命周期方法：</p>
-<p>​    1.componentWillMount()</p>
-<p>​    2.componentWillReceiveProps()</p>
-<p>​    3.componentWillUpdate()</p>
-</li>
+<li>Mainline version：Mainline 是 Nginx 目前主力在做的版本，可以说是开发版 .</li>
+<li>Stable version：最新稳定版，生产环境上建议使用的版本 </li>
+<li>Legacy versions：遗留的老版本的稳定版 </li>
 </ul>
-<h1 id="1-constructor"><a href="#1-constructor" class="headerlink" title="1.constructor"></a>1.constructor</h1><p>react组件的构造函数在挂载之前被调用。在实现<code>React.Component</code>构造函数时，需要先在添加其他内容前，调用<code>super(props)</code>，用来将父组件传来的<code>props</code>绑定到这个类中，使用<code>this.props</code>将会得到。</p>
-<p>官方建议不要在<code>constructor</code>引入任何具有副作用和订阅功能的代码，这些应当在<code>componentDidMount()</code>中写入。</p>
-<p><code>constructor</code>中应当做些初始化的动作，如：初始化<code>state</code>，将事件处理函数绑定到类实例上，但也不要使用<code>setState()</code>。如果没有必要初始化state或绑定方法，则不需要构造<code>constructor</code>，或者把这个组件换成纯函数写法。</p>
-<p>​    constructor参数接受两个参数props,context 可以获取到父组件传下来的的props,context,如果你想在        constructor<strong>构造函数内部(注意是内部哦，在组件其他地方是可以直接接收的)</strong>使用props或context,则需要传入，并传入super对象。 </p>
-<pre><code> constructor(props,context) {
-  super(props,context)
-  console.log(this.props,this.context) // 在内部可以使用props和context
+<p>​      建议使用稳定版。下载之后解压，解压路径中尽量不要有中文，实际上各种环境配置，软件安装等目录尽量都不要用中文，因为中英文字符编码不一样。</p>
+<p>解压之后的目录就是这样</p>
+<p><img src="/2019/02/18/nginx学习记录/nginx_01.png" alt="nginx_01"></p>
+<p>windows中常用的操做命令，一下命令全在上面根目录进行，用系统自带命令行，比如cmd。</p>
+<p>1.启动nginx。实际上点击nginx.exe也能打开nginx，但是不容易关闭，需要到任务管理器中找到相关服务强行停止掉，建议使用下面命令行开启服务。</p>
+<pre><code>start nginx
+</code></pre><p>nginx默认使用80端口，如果电脑中有其他服务占用了80端口，修改nginx使用的端口即可。</p>
+<pre><code>server {
+ listen  80;  // 这里改成其他的，比如8082
+ server_name localhost;
 }
-</code></pre><p>1 constructor必须用super()初始化this, 可以绑定事件到this</p>
-<p>2 如果你在constructor中要使用this.props, 就必须给super加参数, super(props)；</p>
-<p>3 无论有没有constructor, render中都可以使用this.props, 默认自带</p>
-<p>4 如果组件没有声明constructor, react会默认添加一个空的constructor </p>
-<p>5 ES6采用的是先创建父类的实例this（故要先调用 super( )方法），完后再用子类的构造函数修改this</p>
-<h1 id="2-componentWillMount-（组件将要挂载）"><a href="#2-componentWillMount-（组件将要挂载）" class="headerlink" title="2.componentWillMount （组件将要挂载）"></a>2.componentWillMount （组件将要挂载）</h1><p>1、组件刚经历constructor,初始完数据 </p>
-<p>2、组件还未进入render，组件还未渲染完成，dom还未渲染 </p>
-<p>componentWillMount 一般用的比较少，更多的是用在服务端渲染，（我还未使用过react服务端渲染哈，所以也写不了很多） </p>
-<p>但是有一点需要注意的，一般ajax请求不要在这个生命周期里面进行，虽然有些情况下并不会出错，但是如果ajax请求过来的数据是空，那么会影响页面的渲染，可能看到的就是空白。 </p>
-<h1 id="3-componentDidMount（组件渲染完成）"><a href="#3-componentDidMount（组件渲染完成）" class="headerlink" title="3.componentDidMount（组件渲染完成）"></a>3.componentDidMount（组件渲染完成）</h1><p>组件完成装载（已经插入 DOM 树）时，触发该方法。组件第一次渲染完成，此时dom节点已经生成，可以在这里调用ajax请求，返回数据setState后组件会重新渲染 。 </p>
-<p>一般用于下面场景</p>
-<blockquote>
-<p>1.异步请求 ajax<br>2.添加事件绑定（注意在 componentWillUnmount 中取消，以免造成内存泄漏）</p>
-</blockquote>
-<h1 id="4-componentWillReceiveProps-nextProps"><a href="#4-componentWillReceiveProps-nextProps" class="headerlink" title="4.componentWillReceiveProps (nextProps)"></a>4.componentWillReceiveProps (nextProps)</h1><p>componentWillReceiveProps在接受父组件改变后的props需要重新渲染组件时用到的比较多 </p>
-<pre><code>class ExampleComponent extends React.Component {
-  state = {
-    isScrollingDown: false,
-  };
+</code></pre><p>2.重启nginx，修改nginx配置之后就需要重启一下</p>
+<pre><code>nginx -s reload
+</code></pre><p>3.停止nginx。建议使用后面那种停止方式</p>
+<pre><code> nginx -s stop
+ nginx -s quit
+</code></pre><p>nginx停止命令stop与quit参数的区别在于stop是快速停止nginx，可能并不保存相关信息，quit是完整有序的停止nginx，并保存相关信息。nginx启动与停止命令的效果都可以通过Windows任务管理器中的进程选项卡观察。</p>
+<p>4.其他nginx命令（一般很少用到）</p>
+<pre><code>-?,-h           : 打开帮助信息
+-v              : 显示版本信息并退出
+-V              : 显示版本和配置选项信息，然后退出
+-t              : 检测配置文件是否有语法错误，然后退出
+-q              : 在检测配置文件期间屏蔽非错误信息
+-s signal       : 给一个 nginx 主进程发送信号：stop（停止）, quit（退出）, reopen（重启）, reload（重新加载配置文件）
+-p prefix       : 设置前缀路径（默认是：/usr/local/Cellar/nginx/1.2.6/）
+-c filename     : 设置配置文件（默认是：/usr/local/etc/nginx/nginx.conf）
+-g directives   : 设置配置文件外的全局指令
+</code></pre><h3 id="2-2-mac版"><a href="#2-2-mac版" class="headerlink" title="2-2 mac版"></a>2-2 mac版</h3><p>1.打开终端，安装Command Line tools ，基本上应该都安装过这个，可以跳过</p>
+<pre><code>
+xcode-select --install
+</code></pre><p>2.安装brew命令 </p>
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre><p>3.安装nginx </p>
+<pre><code>brew install nginx
+</code></pre><p>4.启动nginx</p>
+<pre><code>sudo nginx
+</code></pre><p>5.mac版nginx命令，基本上和windows差不多</p>
+<pre><code>sudo nginx   // 启动
+sudo -s reload  // 重启
+sudo -s quit  // 停止
+sudo -s stop   // 停止
+</code></pre><p>6.nginx安装目录</p>
+<pre><code>open /usr/local/etc/nginx/
+</code></pre><h2 id="3-nginx配置"><a href="#3-nginx配置" class="headerlink" title="3.nginx配置"></a>3.nginx配置</h2><p>nginx启动之后，访问<code>http://localhost:8082/</code>，因为我修改了nginx的默认端口为<code>8082</code>。</p>
+<p><img src="/2019/02/18/nginx学习记录/nginx_02.png" alt="02"></p>
+<h3 id="3-1-配置详解"><a href="#3-1-配置详解" class="headerlink" title="3-1 配置详解"></a>3-1 配置详解</h3><p>我们先看一下nginx的默认配置，在conf文件夹中，找到nginx.conf文件。在我这路径为<code>E:\nginx-1.14.2\conf\nginx.conf</code></p>
+<pre><code>
+#user  nobody;
+worker_processes  1;
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.currentRow !== nextProps.currentRow) {
-      this.setState({
-        isScrollingDown:nextProps.currentRow
-      });
-    }
-  }
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
 }
-</code></pre><p>这个方法将被弃用，推荐使用 getDerivedStateFromProps 代替。 </p>
-<h1 id="5-shouldComponentUpdate-nextProps-nextState"><a href="#5-shouldComponentUpdate-nextProps-nextState" class="headerlink" title="5.shouldComponentUpdate(nextProps,nextState)"></a>5.shouldComponentUpdate(nextProps,nextState)</h1><p>​    返回一个布尔值。 </p>
-<p>​    唯一用于控制组件重新渲染的生命周期，由于在react中，setState以后，state发生变化，组件会进入重新渲染的流程，（暂时这么理解，其实setState以后有些情况并不会重新渲染，比如<strong>数组引用不变</strong>）在这里return false可以阻止组件的更新<br>     该方法通过返回 true 或者 false 来确定是否需要触发新的渲染。返回 false， 则不会触发后续的 componentWillUpdate()、render() 和 componentDidUpdate()（但是 state 变化还是可能引起子组件重新渲染）。</p>
-<p>所以通常通过这个方法对 props 和 state 做比较，从而避免一些不必要的渲染。</p>
-<h1 id="6-componentWillUpdate-nextProps-nextState"><a href="#6-componentWillUpdate-nextProps-nextState" class="headerlink" title="6.componentWillUpdate (nextProps,nextState)"></a>6.componentWillUpdate (nextProps,nextState)</h1><p>shouldComponentUpdate返回true以后，组件进入重新渲染的流程，进入componentWillUpdate,这里同样可以拿到nextProps和nextState 。这个平时倒是用的不多。</p>
-<h1 id="7-render函数"><a href="#7-render函数" class="headerlink" title="7.render函数"></a>7.render函数</h1><p><strong>用于将模板转为 HTML 语言，并插入指定的 DOM 节点。</strong> </p>
-<p>render函数会插入jsx生成的dom结构，react会生成一份虚拟dom树，在每一次组件更新时，在此react会通过其diff算法比较更新前后的新旧DOM树，比较以后，找到最小的有差异的DOM节点，并重新渲染 </p>
-<pre><code>ReactDOM.render(
-  &lt;h1&gt;Hello, world!&lt;/h1&gt;,
-  document.getElementById(&#39;example&#39;)
-);
-</code></pre><p>上面代码将一个 h1 标题，插入 example 节点，输出一个h1标签的Hello, world!</p>
-<h1 id="8-componentDidUpdate"><a href="#8-componentDidUpdate" class="headerlink" title="8.componentDidUpdate"></a>8.componentDidUpdate</h1><p>在组件完成更新后立即调用。在初始化时不会被调用。 </p>
-<p>组件一次重新渲染的过程，下面5处打印出来的state应该是相同的。 </p>
-<pre><code>componentWillReceiveProps (nextProps,nextState) {
-    this.setState({
-        fengfeng:nextProps.fengfeng
-    },()=&gt;{
-        console.log(this.state.fengfeng) //1
-    })
+
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #log_format  main  &#39;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#39;
+    #                  &#39;$status $body_bytes_sent &quot;$http_referer&quot; &#39;
+    #                  &#39;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#39;;
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+
+        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        #
+        #location ~ \.php$ {
+        #    proxy_pass   http://127.0.0.1;
+        #}
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        #location ~ \.php$ {
+        #    root           html;
+        #    fastcgi_pass   127.0.0.1:9000;
+        #    fastcgi_index  index.php;
+        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+        #    include        fastcgi_params;
+        #}
+
+        # deny access to .htaccess files, if Apache&#39;s document root
+        # concurs with nginx&#39;s one
+        #
+        #location ~ /\.ht {
+        #    deny  all;
+        #}
+    }
+
+
+    # another virtual host using mix of IP-, name-, and port-based configuration
+    #
+    #server {
+    #    listen       8000;
+    #    listen       somename:8080;
+    #    server_name  somename  alias  another.alias;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+
+    # HTTPS server
+    #
+    #server {
+    #    listen       443 ssl;
+    #    server_name  localhost;
+
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_cache    shared:SSL:1m;
+    #    ssl_session_timeout  5m;
+
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers  on;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
 
 }
-shouldComponentUpdate (nextProps,nextState) {
-    console.log(nextState.fengfeng)  //2
-}
-componentWillUpdate (nextProps,nextState) {
-    console.log(nextState.fengfeng)  //3
-}
-componentDidUpdate (prevProps,prevState) {
-    console.log(this.state.fengfeng) //5
-}
-render () {
-    console.log(this.state.fengfeng) //4
-    return (
-        &lt;div&gt;&lt;/div&gt;
-    )
-}
-</code></pre><h1 id="9-componentWillUnmount"><a href="#9-componentWillUnmount" class="headerlink" title="9.componentWillUnmount"></a>9.componentWillUnmount</h1><p>在组件从 DOM 中移除之前立刻被调用。 </p>
-<p>componentWillUnmount也是会经常用到的一个生命周期 </p>
+
+</code></pre><p>上面文件，简单点说就是</p>
+<pre><code>main
+      events   {
+        ....
+      }
+      http        {
+        ....
+        upstream myproject {
+          .....
+        }
+        server  {
+          ....
+          location {
+              ....
+          }
+        }
+        server  {
+          ....
+          location {
+              ....
+          }
+      }
+      ....
+
+</code></pre><p>1.main(全局设置) 。主要控制nginx子进程的所属用户/用户组、派生子进程数、错误日志位置/级别、pid位置、子进程优先级、进程对应cpu、进程能够打开的文件描述符数目等。 </p>
+<p>2.events(nginx工作模式) 。控制nginx处理连接的方式 </p>
+<p>3.http(http设置) 。是nginx处理http请求的主要配置模块，大多数配置都在这里面进行。 </p>
+<p>4.sever(主机设置) 。是nginx中主机的配置块，可以配置多个虚拟主机。</p>
+<p>5.location(URL匹配) 。是server中对应的目录级别的控制块，可以有多个。 </p>
+<p>6.upstream(负载均衡服务器设置) 。是nginx做反向代理和负载均衡的配置块，可以有多个。 </p>
+<h3 id="3-1实战练习"><a href="#3-1实战练习" class="headerlink" title="3-1实战练习"></a>3-1实战练习</h3><p>下面我们用豆瓣api V2开放接口来做实验。</p>
 <blockquote>
-<p>1.clear你在组建中所有的setTimeout,setInterval </p>
-<p>2.移除所有组建中的监听 removeEventListener </p>
-<p>3.也许你会经常遇到这个warning: </p>
+<p>接口地址：<a href="http://api.douban.com/v2/movie/top250?start=25&amp;count=25" target="_blank" rel="noopener">http://api.douban.com/v2/movie/top250?start=25&amp;count=25</a> </p>
 </blockquote>
-<pre><code>Can only update a mounted or mounting component. This usually means you called setState() on an       
- unmounted component. This is a no-op. Please check the code for the undefined component.
-</code></pre><p>实际的原因是因为在组件挂载（mounted）之后进行了异步操作，比如ajax请求或者设置了定时器等，而你在callback中进行了setState操作。当你切换路由时，组件已经被卸载（unmounted）了，此时异步操作中callback还在执行，请求还未完成，setState没有得到值。因此会报warning 。</p>
-<blockquote>
-<p>我一般是这么解决的</p>
-</blockquote>
-<pre><code>   componentWillUnmount() {
-        //重写组件的setState方法，直接返回空
-        this.setState = (state, callback) =&gt; {
-            return;
-        };
-    }
-</code></pre><blockquote>
-<p>其实还有两种解决方法</p>
-<p>1、<strong>在卸载的时候对所有的操作进行清除（例如：abort你的ajax请求或者清除定时器）</strong> </p>
-</blockquote>
-<pre><code>componentDidMount () {
-    //1.ajax请求
-    $.ajax(&#39;你的请求&#39;,{})
-        .then(res =&gt; {
-            this.setState({
-                aa:true
-            })
-        })
-        .catch(err =&gt; {})
-    //2.定时器
-    timer = setTimeout(() =&gt; {
-        //dosomething
-    },1000)
-}
-componentWillUnMount  () {
-    //1.ajax请求
-    $.ajax.abort()
-    //2.定时器
-    clearTimeout(timer)
-}
-</code></pre><blockquote>
-<p>2、<strong>设置一个flag，当unmount的时候重置这个flag</strong> </p>
-</blockquote>
-<pre><code>componentDidMount () {
-    this._isMounted = true;
-    $.ajax(&#39;你的请求&#39;,{})
-        .then(res =&gt; {
-            if(this._isMounted){
-                this.setState({
-                    aa:true
-                })
+<p>axios请求：</p>
+<pre><code>axios.get({
+    method:&#39;get&#39;,
+    url:&quot;/v2/movie/top250?start=25&amp;count=25&quot;
+}).then((res)=&gt;{
+    console.log(res.data)
+})
+
+</code></pre><p>或者使用jquery</p>
+<pre><code>$.get(&quot;/v2/movie/top250?start=25&amp;count=25&quot;, function(data){
+    console.log(data);
+})
+</code></pre><p>要实现跨域，只需要简单修改几个设置。</p>
+<p>1.修改默认配置，大概在35行，80端口改为8082，当然，其他数字也可以，只要是未被占用的端口</p>
+<pre><code> listen       80;
+</code></pre><p>2.反向代理到webpack-server服务<br>默认代理服务为</p>
+<pre><code> location / {
+            root   html;
+            add_header Cache-Control no-store;
+            add_header &#39;Access-Control-Allow-Origin&#39; &#39;*&#39;;
+            index  index.html index.htm;
+        }
+</code></pre><p>修改为下面这样，建议注释掉上面部分，新增下面这部分内容。</p>
+<pre><code>     location / {
+             # 反向代理到webpack-server服务
+             proxy_pass http://127.0.0.1:8081;
+        }
+</code></pre><p>这个匹配规则是，匹配到路由中有<code>/</code>的部分就代理到<code>http://127.0.0.1:8081</code>，相当于全局匹配。。</p>
+<p>然后我们在nginx配置文件中，新增一条配置</p>
+<pre><code>  server {
+      location ^~ /v2/movie {
+                proxy_pass http://api.douban.com;
             }
-        })
-        .catch(err =&gt; {})
-}
-componentWillUnMount () {
-    this._isMounted = false;
+        }
+</code></pre><p>这里个规则是匹配到 <code>/v2/movie</code>路由之后，重定向到<code>http://api.douban.com</code></p>
+<p>这里需要注意一点，proxy_pass这里，<code>http://api.douban.com</code>和<code>http://api.douban.com/</code>是不一样的。</p>
+<ul>
+<li>不加<code>/</code>的情况，访问<code>http://10.1.70.229:8082/v2/movie/v2/movie/top250?start=25&amp;count=25</code>会得到<code>http://api.douban.com/v2/movie/top250?start=25&amp;count=25</code>（符合预期的）</li>
+<li>加/的情况,访问<code>http://10.1.70.229:8082/v2/movie/v2/movie/top250?start=25&amp;count=25</code>会得到<code>http://api.douban.com/top250?start=25&amp;count=25</code>（不符合预期）</li>
+</ul>
+<p>下面两种配置效果是一样的。</p>
+<pre><code>location ^~ /v2/movie {
+                proxy_pass http://api.douban.com;
+            }
+</code></pre><p>或</p>
+<pre><code>   location ^~ /v2/movie {
+            proxy_pass http://api.douban.com/v2/movie/;
+        }
+</code></pre><p>针对这种情况，如果后端接口统一有了规定前缀，比如<strong>/api</strong>，那你这里就不要配置斜杠了。另一种情况，后端接口shit一样，没有统一前缀，这边又要区分，那就在前端所有接口都加一个统一前缀，比如<strong>/api</strong>，然后通过加<strong>斜杠</strong>来替换掉好了～ </p>
+<p>删掉多余注释代码，整个nginx.conf文件配置如下。</p>
+<pre><code>
+
+worker_processes  1;
+
+events {
+    worker_connections  1024;
 }
 
-</code></pre><p>不过根据我的实际经验，还是重写组件的setState方法最管用。</p>
-<h1 id="10-React16新增的生命周期"><a href="#10-React16新增的生命周期" class="headerlink" title="10.React16新增的生命周期"></a>10.React16新增的生命周期</h1><h2 id="10-1-getDerivedStateFromProps"><a href="#10-1-getDerivedStateFromProps" class="headerlink" title="10-1.getDerivedStateFromProps"></a>10-1.getDerivedStateFromProps</h2><p><code>getDerivedStateFromProps</code>在组件实例化后，和接受新的<code>props</code>后被调用。他返回一个对象来更新状态，或者返回null表示新的props不需要任何state的更新。</p>
-<p>如果是由于父组件的props更改，所带来的重新渲染，也会触发此方法。</p>
-<p>调用<code>steState()</code>不会触发<code>getDerivedStateFromProps()</code>。</p>
-<h2 id="10-2、getSnapshotBeforeUpdate"><a href="#10-2、getSnapshotBeforeUpdate" class="headerlink" title="10-2、getSnapshotBeforeUpdate"></a>10-2、getSnapshotBeforeUpdate</h2><pre><code> getSnapshotBeforeUpdate(prevProps, prevState) {
-    // ...
-  }
-</code></pre><p>新的<code>getSnapshotBeforeUpdate</code>生命周期在更新之前被调用（例如，在DOM被更新之前）。此生命周期的返回值将作为第三个参数传递给<code>componentDidUpdate</code>。 （这个生命周期不是经常需要的，但可以用于在恢复期间手动保存滚动位置的情况。）</p>
-<p>与<code>componentDidUpdate</code>一起，这个新的生命周期将覆盖旧版<code>componentWillUpdate</code>的所有用例。</p>
-<h1 id="11-生命周期各函数的调用顺序"><a href="#11-生命周期各函数的调用顺序" class="headerlink" title="11.生命周期各函数的调用顺序"></a>11.生命周期各函数的调用顺序</h1><p><img src="/2018/10/07/React生命周期/react-01.jpg" alt="img"></p>
+http {
+    include       mime.types;
+
+    default_type  application/octet-stream;
+
+    sendfile        on;
+
+    keepalive_timeout  65;
+
+    server {
+        listen       8082;
+        server_name  gwg.localhost;
+
+        location / {
+             # 反向代理到webpack-server服务
+             proxy_pass http://127.0.0.1:8081;
+        }
+
+        # 匹配豆瓣api
+        location ^~ /v2/movie {
+            # rewrite ^/v2/movie/(.*)$ /$1 break;
+            proxy_pass http://api.douban.com;
+        }
+
+        # 匹配到错误之后的处理页
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+
+    }
+
+}
+
+</code></pre><h3 id="3-3-rewrite"><a href="#3-3-rewrite" class="headerlink" title="3-3 rewrite"></a>3-3 rewrite</h3><p>rewrite功能就是，使用nginx提供的全局变量或自己设置的变量，结合正则表达式和标志位实现url重写以及重定向。rewrite只能放在server{},location{},if{}中，并且只能对域名后边的除去传递的参数外的字符串起作用，例如 <code>http://seanlook.com/a/we/index.php?id=1&amp;u=str</code> 只对/a/we/index.php重写。语法<code>rewrite regex replacement [flag];</code></p>
+<p>如果相对域名或参数字符串起作用，可以使用全局变量匹配，也可以使用proxy_pass反向代理。</p>
+<p>表明看rewrite和location功能有点像，都能实现跳转，主要区别在于rewrite是在同一域名内更改获取资源的路径，而location是对一类路径做控制访问或反向代理，可以proxy_pass到其他机器。很多情况下rewrite也会写在location里，它们的执行顺序是：</p>
 <ol>
-<li><code>getDefaultProps()</code>，调用1次</li>
-<li><code>getInitialState()</code>，调用1次</li>
-<li><code>componentWillMount()</code>，调用1次</li>
-<li><code>render()</code>，调用&gt;=1次</li>
-<li><code>componentDidMount()</code>：仅客户端，调用1次</li>
-<li><code>componentWillReceiveProps(object nextProps)</code>，调用&gt;=0次</li>
-<li><code>ShouldComponentUpdate(object nextProps, object nextState)</code>，调用&gt;=0次</li>
-<li><code>componentWillUpdate(object nextProps, object nextState)</code>，调用&gt;=0次</li>
-<li><code>render()</code>，调用&gt;=1次</li>
-<li><code>componentDidUpdate(object prevProps, object prevState)</code>，调用&gt;=0次</li>
-<li><code>componentWillUnmount()</code>，调用1次</li>
+<li>执行server块的rewrite指令</li>
+<li>执行location匹配</li>
+<li>执行选定的location中的rewrite指令</li>
 </ol>
+<p>如果其中某步URI被重写，则重新循环执行1-3，直到找到真实存在的文件；循环超过10次，则返回500 Internal Server Error错误。</p>
+<p>还是使用豆瓣的接口</p>
+<blockquote>
+<p>接口地址：<a href="http://api.douban.com/v2/movie/top250?start=25&amp;count=25" target="_blank" rel="noopener">http://api.douban.com/v2/movie/top250?start=25&amp;count=25</a> </p>
+</blockquote>
+<p>在js中这样访问，注意多了 /api 部分</p>
+<pre><code>$.get(&quot;/api/v2/movie/top250?start=25&amp;count=25&quot;, function(data){
+    console.log(data);
+})
+</code></pre><p>配置中的location修改为</p>
+<pre><code> location ^~ /api/ {
+            rewrite ^/api/(.*)$ /$1 break;
+            proxy_pass http://api.douban.com/;
+        }
+</code></pre><p>这里解释为：匹配到请求路径中包含 <code>/api/</code>部分时候，将<code>/api/</code>这部分替换为<code>http://api.douban.com/</code></p>
+<p>也就是说请求的是<code>http://10.1.70.229:8082/api/v2/movie/top250?start=25&amp;count=25</code>，实际上已经代理到<code>http://api.douban.com/api/v2/movie/top250?start=25&amp;count=25</code>，得到了接口的数据</p>
+<h3 id="3-4-location"><a href="#3-4-location" class="headerlink" title="3-4 location"></a>3-4 location</h3><blockquote>
+<p>自出引用自  <a href="https://segmentfault.com/a/1190000002797606#articleHeader0" target="_blank" rel="noopener">https://segmentfault.com/a/1190000002797606#articleHeader0</a></p>
+</blockquote>
+<p>语法规则： location [=|~|~*|^~] /uri/ { … }</p>
+<p>= 开头表示精确匹配</p>
+<p>^~ 开头表示uri以某个常规字符串开头，理解为匹配 url路径即可。nginx不对url做编码，因此请求为/static/20%/aa，可以被规则^~ /static/ /aa匹配到（注意是空格）。</p>
+<p>~ 开头表示区分大小写的正则匹配</p>
+<p>~*  开头表示不区分大小写的正则匹配</p>
+<p>!~和!~*分别为区分大小写不匹配及不区分大小写不匹配 的正则</p>
+<p>/ 通用匹配，任何请求都会匹配到。</p>
+<p>多个location配置的情况下匹配顺序为（参考资料而来，还未实际验证，试试就知道了，不必拘泥，仅供参考）：</p>
+<p>首先匹配 =，其次匹配^~, 其次是按文件中顺序的正则匹配，最后是交给 / 通用匹配。当有匹配成功时候，停止匹配，按当前匹配规则处理请求。</p>
+<pre><code>location = / {  
+   #规则A  
+}  
+location = /login {  
+   #规则B  
+}  
+location ^~ /static/ {  
+   #规则C  
+}  
+location ~ \.(gif|jpg|png|js|css)$ {  
+   #规则D  
+}  
+location ~* \.png$ {  
+   #规则E  
+}  
+location !~ \.xhtml$ {  
+   #规则F  
+}  
+location !~* \.xhtml$ {  
+   #规则G  
+}  
+location / {  
+   #规则H  
+} 
+</code></pre><p>那么产生的效果如下：</p>
+<p>访问根目录/， 比如<a href="http://localhost/" target="_blank" rel="noopener">http://localhost/</a> 将匹配规则A</p>
+<p>访问 <a href="http://localhost/login" target="_blank" rel="noopener">http://localhost/login</a> 将匹配规则B，<a href="http://localhost/register" target="_blank" rel="noopener">http://localhost/register</a> 则匹配规则H</p>
+<p>访问 <a href="http://localhost/static/a.html" target="_blank" rel="noopener">http://localhost/static/a.html</a> 将匹配规则C</p>
+<p>访问 <a href="http://localhost/a.gif" target="_blank" rel="noopener">http://localhost/a.gif</a>, <a href="http://localhost/b.jpg" target="_blank" rel="noopener">http://localhost/b.jpg</a> 将匹配规则D和规则E，但是规则D顺序优先，规则E不起作用，而 <a href="http://localhost/static/c.png" target="_blank" rel="noopener">http://localhost/static/c.png</a> 则优先匹配到 规则C</p>
+<p>访问 <a href="http://localhost/a.PNG" target="_blank" rel="noopener">http://localhost/a.PNG</a> 则匹配规则E， 而不会匹配规则D，因为规则E不区分大小写。</p>
+<p>访问 <a href="http://localhost/a.xhtml" target="_blank" rel="noopener">http://localhost/a.xhtml</a> 不会匹配规则F和规则G，<a href="http://localhost/a.XHTML不会匹配规则G，因为不区分大小写。规则F，规则G属于排除法，符合匹配规则但是不会匹配到，所以想想看实际应用中哪里会用到。" target="_blank" rel="noopener">http://localhost/a.XHTML不会匹配规则G，因为不区分大小写。规则F，规则G属于排除法，符合匹配规则但是不会匹配到，所以想想看实际应用中哪里会用到。</a></p>
+<p>访问 <a href="http://localhost/category/id/1111" target="_blank" rel="noopener">http://localhost/category/id/1111</a> 则最终匹配到规则H，因为以上规则都不匹配，这个时候应该是nginx转发请求给后端应用服务器，比如FastCGI（php），tomcat（jsp），nginx作为方向代理服务器存在。</p>
+<p>暂时就了解到这里了，后续有机会再次学习…….</p>
 
         
     
@@ -716,7 +885,7 @@ componentWillUnMount () {
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/01/02/开发中的一些踩坑记录/" id="post_nav-newer" class="prev-content">
+        <a href="/2019/04/29/微信小程序开发记录-2/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -730,7 +899,7 @@ componentWillUnMount () {
 
     <!-- Next Nav -->
     
-        <a href="/2018/08/29/hexo搭建博客/" id="post_nav-older" class="next-content">
+        <a href="/2019/01/08/mac中如何美化命令行工具/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
