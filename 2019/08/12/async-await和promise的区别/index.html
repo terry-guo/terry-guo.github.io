@@ -37,7 +37,7 @@
     
     <title>
         
-            React生命周期 | 
+            async-await和promise的区别 | 
         
         小鱼干喜欢猫
     </title>
@@ -236,18 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://terry-guo.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="React生命周期 | 小鱼干喜欢猫">
+    <meta property="og:title" content="async-await和promise的区别 | 小鱼干喜欢猫">
     <meta property="og:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta property="og:description" content="只要思想不滑坡，办法总比困难多！">
     
 
     
-        <meta property="article:published_time" content="Sun Oct 07 2018 19:16:08 GMT+0800">
-        <meta property="article:modified_time" content="Thu Dec 20 2018 01:47:14 GMT+0800">
+        <meta property="article:published_time" content="Mon Aug 12 2019 16:23:51 GMT+0800">
+        <meta property="article:modified_time" content="Mon Aug 12 2019 16:26:12 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="React生命周期 | 小鱼干喜欢猫">
+    <meta name="twitter:title" content="async-await和promise的区别 | 小鱼干喜欢猫">
     <meta name="twitter:description" content="只要思想不滑坡，办法总比困难多！">
     <meta name="twitter:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -255,7 +255,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://terry-guo.github.io/2018/10/07/React生命周期/index.html">
+        <link rel="canonical" href="https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -267,10 +267,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://terry-guo.github.io/2018/10/07/React生命周期/index.html",
-    "headline": "React生命周期",
-    "datePublished": "Sun Oct 07 2018 19:16:08 GMT+0800",
-    "dateModified": "Thu Dec 20 2018 01:47:14 GMT+0800",
+    "mainEntityOfPage": "https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html",
+    "headline": "async-await和promise的区别",
+    "datePublished": "Mon Aug 12 2019 16:23:51 GMT+0800",
+    "dateModified": "Mon Aug 12 2019 16:26:12 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Terry Guo",
@@ -359,7 +359,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-constructor"><span class="post-toc-text">1.constructor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-componentWillMount-（组件将要挂载）"><span class="post-toc-text">2.componentWillMount （组件将要挂载）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-componentDidMount（组件渲染完成）"><span class="post-toc-text">3.componentDidMount（组件渲染完成）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-componentWillReceiveProps-nextProps"><span class="post-toc-text">4.componentWillReceiveProps (nextProps)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#5-shouldComponentUpdate-nextProps-nextState"><span class="post-toc-text">5.shouldComponentUpdate(nextProps,nextState)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#6-componentWillUpdate-nextProps-nextState"><span class="post-toc-text">6.componentWillUpdate (nextProps,nextState)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#7-render函数"><span class="post-toc-text">7.render函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#8-componentDidUpdate"><span class="post-toc-text">8.componentDidUpdate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#9-componentWillUnmount"><span class="post-toc-text">9.componentWillUnmount</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#10-React16新增的生命周期"><span class="post-toc-text">10.React16新增的生命周期</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-1-getDerivedStateFromProps"><span class="post-toc-text">10-1.getDerivedStateFromProps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-2、getSnapshotBeforeUpdate"><span class="post-toc-text">10-2、getSnapshotBeforeUpdate</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#11-生命周期各函数的调用顺序"><span class="post-toc-text">11.生命周期各函数的调用顺序</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-promise"><span class="post-toc-text">1  promise</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-promsie有三种状态"><span class="post-toc-text">2 promsie有三种状态</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3promise的优缺点"><span class="post-toc-text">3promise的优缺点</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-为什么用promise？"><span class="post-toc-text">4 为什么用promise？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-Promise-all"><span class="post-toc-text">5. Promise.all()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-Promise-race"><span class="post-toc-text">6 Promise.race()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-async-await-与-promsie区别"><span class="post-toc-text">6 async/await 与 promsie区别</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-async的错误处理"><span class="post-toc-text">7 async的错误处理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-async-await的优缺点"><span class="post-toc-text">8 async-await的优缺点</span></a></li></ol>
     </ul>
     
 
@@ -391,7 +391,7 @@
         
     
             <p class="article-headline-p">
-                React生命周期
+                async-await和promise的区别
             </p>
         </div>
 
@@ -410,7 +410,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Terry Guo</strong>
-        <span>10月 07, 2018</span>
+        <span>8月 12, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -441,7 +441,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=React生命周期&url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=async-await和promise的区别&url=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -450,7 +450,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React生命周期&url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html&via=Terry Guo" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=async-await和promise的区别&url=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html&via=Terry Guo" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -459,7 +459,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2018/10/07/React生命周期/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -468,7 +468,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -492,209 +492,162 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>​    一直没有梳理过react中的生命周期，因为平时常用的生命周期就那么几个，今天就系统的了解一下react中用到的生命周期。</p>
-<p>​    下面看一下一个组件的基本构造。</p>
-<pre><code>import React,{ Component } from &#39;react&#39;;
+        <p>为什么要写这篇文章？在面试的时候被问过这个问题，虽然在工作中这两种都用过，但是确实是没考虑过有什么区别，今天再重学一遍。</p>
+<h2 id="1-promise"><a href="#1-promise" class="headerlink" title="1  promise"></a>1  promise</h2><p>Promise,简单来说就是一个容器，里面保存着某个未来才会结束的时间，从语法上来说，Promise是一个对象，从它可以获取异步操作的消息。</p>
+<p>基本语法：</p>
+<pre><code>var p1 = new Promise(test);
+var p2 = p1.then(function (result) {
+    console.log(&#39;成功：&#39; + result);
+});
+var p3 = p2.catch(function (reason) {
+    console.log(&#39;失败：&#39; + reason);
+});
 
-class NewDemo extends Component {
-  constructor(props,context) {
-      super(props,context)
-      this.state = {
-          //定义state
-      }
-  }
-componentWillMount () {
-}
-componentDidMount () {
-}
-componentWillReceiveProps (nextProps) {
-}
-shouldComponentUpdate (nextProps,nextState) {
-}
-componentWillUpdate (nextProps,nextState) {
-}
-componentDidUpdate (prevProps,prevState) {
-}
-render () {
-    return (
-        &lt;div&gt;&lt;/div&gt;
-    )
-}
-componentWillUnmount () {
-}
-}
-export default NewDemo;
-</code></pre><ul>
-<li><p>React 16.3 新增的生命周期方法</p>
-<p>​    1.getDerivedStateFromProps()</p>
-<p>​    2.getSnapshotBeforeUpdate()</p>
-</li>
-</ul>
-<ul>
-<li><p>逐渐废弃的生命周期方法：</p>
-<p>​    1.componentWillMount()</p>
-<p>​    2.componentWillReceiveProps()</p>
-<p>​    3.componentWillUpdate()</p>
-</li>
-</ul>
-<h1 id="1-constructor"><a href="#1-constructor" class="headerlink" title="1.constructor"></a>1.constructor</h1><p>react组件的构造函数在挂载之前被调用。在实现<code>React.Component</code>构造函数时，需要先在添加其他内容前，调用<code>super(props)</code>，用来将父组件传来的<code>props</code>绑定到这个类中，使用<code>this.props</code>将会得到。</p>
-<p>官方建议不要在<code>constructor</code>引入任何具有副作用和订阅功能的代码，这些应当在<code>componentDidMount()</code>中写入。</p>
-<p><code>constructor</code>中应当做些初始化的动作，如：初始化<code>state</code>，将事件处理函数绑定到类实例上，但也不要使用<code>setState()</code>。如果没有必要初始化state或绑定方法，则不需要构造<code>constructor</code>，或者把这个组件换成纯函数写法。</p>
-<p>​    constructor参数接受两个参数props,context 可以获取到父组件传下来的的props,context,如果你想在        constructor<strong>构造函数内部(注意是内部哦，在组件其他地方是可以直接接收的)</strong>使用props或context,则需要传入，并传入super对象。 </p>
-<pre><code> constructor(props,context) {
-  super(props,context)
-  console.log(this.props,this.context) // 在内部可以使用props和context
-}
-</code></pre><p>1 constructor必须用super()初始化this, 可以绑定事件到this</p>
-<p>2 如果你在constructor中要使用this.props, 就必须给super加参数, super(props)；</p>
-<p>3 无论有没有constructor, render中都可以使用this.props, 默认自带</p>
-<p>4 如果组件没有声明constructor, react会默认添加一个空的constructor </p>
-<p>5 ES6采用的是先创建父类的实例this（故要先调用 super( )方法），完后再用子类的构造函数修改this</p>
-<h1 id="2-componentWillMount-（组件将要挂载）"><a href="#2-componentWillMount-（组件将要挂载）" class="headerlink" title="2.componentWillMount （组件将要挂载）"></a>2.componentWillMount （组件将要挂载）</h1><p>1、组件刚经历constructor,初始完数据 </p>
-<p>2、组件还未进入render，组件还未渲染完成，dom还未渲染 </p>
-<p>componentWillMount 一般用的比较少，更多的是用在服务端渲染，（我还未使用过react服务端渲染哈，所以也写不了很多） </p>
-<p>但是有一点需要注意的，一般ajax请求不要在这个生命周期里面进行，虽然有些情况下并不会出错，但是如果ajax请求过来的数据是空，那么会影响页面的渲染，可能看到的就是空白。 </p>
-<h1 id="3-componentDidMount（组件渲染完成）"><a href="#3-componentDidMount（组件渲染完成）" class="headerlink" title="3.componentDidMount（组件渲染完成）"></a>3.componentDidMount（组件渲染完成）</h1><p>组件完成装载（已经插入 DOM 树）时，触发该方法。组件第一次渲染完成，此时dom节点已经生成，可以在这里调用ajax请求，返回数据setState后组件会重新渲染 。 </p>
-<p>一般用于下面场景</p>
-<blockquote>
-<p>1.异步请求 ajax<br>2.添加事件绑定（注意在 componentWillUnmount 中取消，以免造成内存泄漏）</p>
-</blockquote>
-<h1 id="4-componentWillReceiveProps-nextProps"><a href="#4-componentWillReceiveProps-nextProps" class="headerlink" title="4.componentWillReceiveProps (nextProps)"></a>4.componentWillReceiveProps (nextProps)</h1><p>componentWillReceiveProps在接受父组件改变后的props需要重新渲染组件时用到的比较多 </p>
-<pre><code>class ExampleComponent extends React.Component {
-  state = {
-    isScrollingDown: false,
-  };
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.currentRow !== nextProps.currentRow) {
-      this.setState({
-        isScrollingDown:nextProps.currentRow
-      });
-    }
-  }
-}
-</code></pre><p>这个方法将被弃用，推荐使用 getDerivedStateFromProps 代替。 </p>
-<h1 id="5-shouldComponentUpdate-nextProps-nextState"><a href="#5-shouldComponentUpdate-nextProps-nextState" class="headerlink" title="5.shouldComponentUpdate(nextProps,nextState)"></a>5.shouldComponentUpdate(nextProps,nextState)</h1><p>​    返回一个布尔值。 </p>
-<p>​    唯一用于控制组件重新渲染的生命周期，由于在react中，setState以后，state发生变化，组件会进入重新渲染的流程，（暂时这么理解，其实setState以后有些情况并不会重新渲染，比如<strong>数组引用不变</strong>）在这里return false可以阻止组件的更新<br>     该方法通过返回 true 或者 false 来确定是否需要触发新的渲染。返回 false， 则不会触发后续的 componentWillUpdate()、render() 和 componentDidUpdate()（但是 state 变化还是可能引起子组件重新渲染）。</p>
-<p>所以通常通过这个方法对 props 和 state 做比较，从而避免一些不必要的渲染。</p>
-<h1 id="6-componentWillUpdate-nextProps-nextState"><a href="#6-componentWillUpdate-nextProps-nextState" class="headerlink" title="6.componentWillUpdate (nextProps,nextState)"></a>6.componentWillUpdate (nextProps,nextState)</h1><p>shouldComponentUpdate返回true以后，组件进入重新渲染的流程，进入componentWillUpdate,这里同样可以拿到nextProps和nextState 。这个平时倒是用的不多。</p>
-<h1 id="7-render函数"><a href="#7-render函数" class="headerlink" title="7.render函数"></a>7.render函数</h1><p><strong>用于将模板转为 HTML 语言，并插入指定的 DOM 节点。</strong> </p>
-<p>render函数会插入jsx生成的dom结构，react会生成一份虚拟dom树，在每一次组件更新时，在此react会通过其diff算法比较更新前后的新旧DOM树，比较以后，找到最小的有差异的DOM节点，并重新渲染 </p>
-<pre><code>ReactDOM.render(
-  &lt;h1&gt;Hello, world!&lt;/h1&gt;,
-  document.getElementById(&#39;example&#39;)
-);
-</code></pre><p>上面代码将一个 h1 标题，插入 example 节点，输出一个h1标签的Hello, world!</p>
-<h1 id="8-componentDidUpdate"><a href="#8-componentDidUpdate" class="headerlink" title="8.componentDidUpdate"></a>8.componentDidUpdate</h1><p>在组件完成更新后立即调用。在初始化时不会被调用。 </p>
-<p>组件一次重新渲染的过程，下面5处打印出来的state应该是相同的。 </p>
-<pre><code>componentWillReceiveProps (nextProps,nextState) {
-    this.setState({
-        fengfeng:nextProps.fengfeng
-    },()=&gt;{
-        console.log(this.state.fengfeng) //1
+//支持链式操作
+p1.then(function (result) {
+    console.log(&#39;成功：&#39; + result);
+}).catch(function (reason) {
+    console.log(&#39;失败：&#39; + reason);
+});
+
+</code></pre><h2 id="2-promsie有三种状态"><a href="#2-promsie有三种状态" class="headerlink" title="2 promsie有三种状态"></a>2 promsie有三种状态</h2><p>ending、fulfilled、rejected(未决定，履行，拒绝)。同一时间只能存在一种状态，且状态一旦改变就不能在变</p>
+<pre><code>1.初始化，状态：pending
+
+2.当调用resolve(成功)，状态：pengding=&gt;fulfilled
+
+3.当调用reject(失败)，状态：pending=&gt;rejected
+</code></pre><h2 id="3promise的优缺点"><a href="#3promise的优缺点" class="headerlink" title="3promise的优缺点"></a>3promise的优缺点</h2><p> 优点：</p>
+<p> 1.Promise 分离了异步数据获取和业务逻辑，有利于代码复用。</p>
+<p> 2.可以采用链式写法</p>
+<p> 3.一旦 Promise 的值确定为fulfilled 或者 rejected 后，不可改变。</p>
+<p> 缺点：</p>
+<p>代码冗余，语义不清。</p>
+<h2 id="4-为什么用promise？"><a href="#4-为什么用promise？" class="headerlink" title="4 为什么用promise？"></a>4 为什么用promise？</h2><p><strong>一</strong>.<strong>解决回调地狱</strong></p>
+<p> 回调地狱：发送多个异步请求时，每个请求之间相互都有关联，会出现第一个请求成功后再做下一个请求的情况。我们这时候往往会用嵌套的方式来解决这种情况，但是这会形成”回调地狱“。如果处理的异步请求越多，那么回调嵌套的就越深。出现的问题：</p>
+<p>1.代码逻辑顺序与执行顺序不一致，不利于阅读与维护。</p>
+<p>2.异步操作顺序变更时，需要大规模的代码重构。</p>
+<p>3.回调函数基本都是匿名函数，bug追踪困难</p>
+<p><strong>2.解决异步</strong></p>
+<p>我们都知道js是单线程执行代码，导致js的很多操作都是异步执行（ajax）的，以下是解决异步的几种方式：</p>
+<p> 1.回调函数(定时器)。</p>
+<p> 2.事件监听。</p>
+<p> 3.发布/订阅。</p>
+<p> 4.Promise对象。(将执行代码和处理结果分开)</p>
+<p> 5.Generator。</p>
+<p>6.ES7的async/await。</p>
+<h2 id="5-Promise-all"><a href="#5-Promise-all" class="headerlink" title="5. Promise.all()"></a>5. Promise.all()</h2><p>多个promise同时使用，其中一个错误会怎样</p>
+<pre><code>let p1 = Promise.resolve(123);
+let p2 = Promise.resolve(&#39;hello&#39;);
+let p3 = Promise.resolve(&#39;success&#39;);
+
+
+Promise.all([p1,p2,p3]).then(result =&gt; {
+    console.log(result); //[ 123, &#39;hello&#39;, &#39;success&#39; ]
+})
+</code></pre><p>Promise.all（）成功之后就是数组类型，当所有状态都是成功状态才返回数组，只要其中有一个的对象是reject的，就返回reject的状态值。</p>
+<pre><code>const pro = (a) =&gt; {
+    return new Promise((resove,reject)=&gt;{
+        if(a==1){
+           setTimeout(()=&gt;{
+            resove(&quot;this is my data&quot;)
+           },2000)
+        }else{
+            reject(&quot;error data&quot;)
+        }
     })
+}
+const pro2 = () =&gt; {
+    return new Promise((resove,reject)=&gt;{
+        reject(&quot;error data&quot;)
+    })
+}
+Promise.all([pro(1),pro2()]).then((res)=&gt;{
+    console.log(res);
 
+}).catch((err)=&gt;{
+    console.log(&#39;走到了catch里面&#39;);
+    console.log(err); //error data
+})
+</code></pre><p>因为pro2函数会reject一个错误，所以后面的promise.all调用的函数数组中，会走到catch里面</p>
+<h2 id="6-Promise-race"><a href="#6-Promise-race" class="headerlink" title="6 Promise.race()"></a>6 Promise.race()</h2><p>和all同样接受多个对象，不同的是，race()接受的对象中，哪个对象返回的快就返回哪个对象，就如race直译的赛跑这样。如果对象其中有reject状态的，必须catch捕捉到，如果返回的够快，就返回这个状态。race最终返回的只有一个值。</p>
+<pre><code>//用sleep来模仿浏览器的AJAX请求
+function sleep(wait) {
+    return new Promise((res,rej) =&gt; {
+        setTimeout(() =&gt; {
+            res(wait);
+        },wait);
+    });
 }
-shouldComponentUpdate (nextProps,nextState) {
-    console.log(nextState.fengfeng)  //2
+
+let p1 = sleep(500);
+let p0 = sleep(2000);
+
+Promise.race([p1,p0]).then(result =&gt; {
+    console.log(result); // 500
+});
+
+let p2 = new Promise((resolve,reject) =&gt; {
+    setTimeout(()=&gt;{
+        reject(&#39;error data&#39;);
+    },1000);
+});
+
+Promise.race([p0,p2]).then(result =&gt; {
+    console.log(result);
+}).catch(result =&gt; {
+    console.log(result); // error data
+});
+</code></pre><h2 id="6-async-await-与-promsie区别"><a href="#6-async-await-与-promsie区别" class="headerlink" title="6 async/await 与 promsie区别"></a>6 async/await 与 promsie区别</h2><p>异步编程的最高境界，就是根本不关心它异步，async函数可以说是异步函数的最终解决方案。</p>
+<p>async-await与promise不存在谁替换谁的关系，因为async-await是寄生于promise的</p>
+<p>基本语法：</p>
+<pre><code>const pro = (a) =&gt; {
+    return new Promise((resove,reject)=&gt;{
+        if(a==1){
+           setTimeout(()=&gt;{
+            resove(&quot;this is my data&quot;)
+           },2000)
+        }else{
+            reject(&quot;error data&quot;)
+        }
+    })
 }
-componentWillUpdate (nextProps,nextState) {
-    console.log(nextState.fengfeng)  //3
+
+async function abc(){
+    let a = await pro(1)
+    console.log(a); // this is my data
+    console.log(&#39;hello world&#39;);
 }
-componentDidUpdate (prevProps,prevState) {
-    console.log(this.state.fengfeng) //5
-}
-render () {
-    console.log(this.state.fengfeng) //4
-    return (
-        &lt;div&gt;&lt;/div&gt;
-    )
-}
-</code></pre><h1 id="9-componentWillUnmount"><a href="#9-componentWillUnmount" class="headerlink" title="9.componentWillUnmount"></a>9.componentWillUnmount</h1><p>在组件从 DOM 中移除之前立刻被调用。 </p>
-<p>componentWillUnmount也是会经常用到的一个生命周期 </p>
-<blockquote>
-<p>1.clear你在组建中所有的setTimeout,setInterval </p>
-<p>2.移除所有组建中的监听 removeEventListener </p>
-<p>3.也许你会经常遇到这个warning: </p>
-</blockquote>
-<pre><code>Can only update a mounted or mounting component. This usually means you called setState() on an       
- unmounted component. This is a no-op. Please check the code for the undefined component.
-</code></pre><p>实际的原因是因为在组件挂载（mounted）之后进行了异步操作，比如ajax请求或者设置了定时器等，而你在callback中进行了setState操作。当你切换路由时，组件已经被卸载（unmounted）了，此时异步操作中callback还在执行，请求还未完成，setState没有得到值。因此会报warning 。</p>
-<blockquote>
-<p>我一般是这么解决的</p>
-</blockquote>
-<pre><code>   componentWillUnmount() {
-        //重写组件的setState方法，直接返回空
-        this.setState = (state, callback) =&gt; {
-            return;
-        };
+abc()
+</code></pre><p>async函数返回一个promise对象</p>
+<p>规则</p>
+<p>1.async表示这是一个async函数，await只能用在这个函数里面</p>
+<p>2.await表示在这里等待promise返回结果之后，再继续执行</p>
+<p>3.await后面应该跟着一个promise对象（跟普通函数也行，只是时候会立即执行，这样async-await就显得多余了）</p>
+<p>4.await必须放在async里面执行</p>
+<p>5.await等待的虽然是promise对象，但是不必写.then()，可以直接得到返回结果(例如上面代码执行后，2秒钟之后会打印出a的结果为 this is my data)</p>
+<h2 id="7-async的错误处理"><a href="#7-async的错误处理" class="headerlink" title="7 async的错误处理"></a>7 async的错误处理</h2><p>try-catch捕捉</p>
+<pre><code>let p = new Promise((resolve,reject) =&gt; {
+    setTimeout(() =&gt; {
+        reject(&#39;error&#39;);
+    },1000);
+});
+
+async function demo(params) {
+    try {
+        let result = await p;
+    }catch(e) {
+        console.log(e);
     }
-</code></pre><blockquote>
-<p>其实还有两种解决方法</p>
-<p>1、<strong>在卸载的时候对所有的操作进行清除（例如：abort你的ajax请求或者清除定时器）</strong> </p>
-</blockquote>
-<pre><code>componentDidMount () {
-    //1.ajax请求
-    $.ajax(&#39;你的请求&#39;,{})
-        .then(res =&gt; {
-            this.setState({
-                aa:true
-            })
-        })
-        .catch(err =&gt; {})
-    //2.定时器
-    timer = setTimeout(() =&gt; {
-        //dosomething
-    },1000)
-}
-componentWillUnMount  () {
-    //1.ajax请求
-    $.ajax.abort()
-    //2.定时器
-    clearTimeout(timer)
-}
-</code></pre><blockquote>
-<p>2、<strong>设置一个flag，当unmount的时候重置这个flag</strong> </p>
-</blockquote>
-<pre><code>componentDidMount () {
-    this._isMounted = true;
-    $.ajax(&#39;你的请求&#39;,{})
-        .then(res =&gt; {
-            if(this._isMounted){
-                this.setState({
-                    aa:true
-                })
-            }
-        })
-        .catch(err =&gt; {})
-}
-componentWillUnMount () {
-    this._isMounted = false;
 }
 
-</code></pre><p>不过根据我的实际经验，还是重写组件的setState方法最管用。</p>
-<h1 id="10-React16新增的生命周期"><a href="#10-React16新增的生命周期" class="headerlink" title="10.React16新增的生命周期"></a>10.React16新增的生命周期</h1><h2 id="10-1-getDerivedStateFromProps"><a href="#10-1-getDerivedStateFromProps" class="headerlink" title="10-1.getDerivedStateFromProps"></a>10-1.getDerivedStateFromProps</h2><p><code>getDerivedStateFromProps</code>在组件实例化后，和接受新的<code>props</code>后被调用。他返回一个对象来更新状态，或者返回null表示新的props不需要任何state的更新。</p>
-<p>如果是由于父组件的props更改，所带来的重新渲染，也会触发此方法。</p>
-<p>调用<code>steState()</code>不会触发<code>getDerivedStateFromProps()</code>。</p>
-<h2 id="10-2、getSnapshotBeforeUpdate"><a href="#10-2、getSnapshotBeforeUpdate" class="headerlink" title="10-2、getSnapshotBeforeUpdate"></a>10-2、getSnapshotBeforeUpdate</h2><pre><code> getSnapshotBeforeUpdate(prevProps, prevState) {
-    // ...
-  }
-</code></pre><p>新的<code>getSnapshotBeforeUpdate</code>生命周期在更新之前被调用（例如，在DOM被更新之前）。此生命周期的返回值将作为第三个参数传递给<code>componentDidUpdate</code>。 （这个生命周期不是经常需要的，但可以用于在恢复期间手动保存滚动位置的情况。）</p>
-<p>与<code>componentDidUpdate</code>一起，这个新的生命周期将覆盖旧版<code>componentWillUpdate</code>的所有用例。</p>
-<h1 id="11-生命周期各函数的调用顺序"><a href="#11-生命周期各函数的调用顺序" class="headerlink" title="11.生命周期各函数的调用顺序"></a>11.生命周期各函数的调用顺序</h1><p><img src="/2018/10/07/React生命周期/react-01.jpg" alt="img"></p>
-<ol>
-<li><code>getDefaultProps()</code>，调用1次</li>
-<li><code>getInitialState()</code>，调用1次</li>
-<li><code>componentWillMount()</code>，调用1次</li>
-<li><code>render()</code>，调用&gt;=1次</li>
-<li><code>componentDidMount()</code>：仅客户端，调用1次</li>
-<li><code>componentWillReceiveProps(object nextProps)</code>，调用&gt;=0次</li>
-<li><code>ShouldComponentUpdate(object nextProps, object nextState)</code>，调用&gt;=0次</li>
-<li><code>componentWillUpdate(object nextProps, object nextState)</code>，调用&gt;=0次</li>
-<li><code>render()</code>，调用&gt;=1次</li>
-<li><code>componentDidUpdate(object prevProps, object prevState)</code>，调用&gt;=0次</li>
-<li><code>componentWillUnmount()</code>，调用1次</li>
-</ol>
+demo();
+</code></pre><h2 id="8-async-await的优缺点"><a href="#8-async-await的优缺点" class="headerlink" title="8 async-await的优缺点"></a>8 async-await的优缺点</h2><p>优点：</p>
+<p>1.解决回调地狱的问题</p>
+<p>2.语法后面不用再加 <code>then</code> 链式回调函数</p>
+<p>3.try/catch 使 async 语法的异常捕获更加好用。</p>
+<p>缺点：</p>
+<p>大多浏览器原生不支持，需要经过babel编译，编译过的代码会变得臃肿</p>
 
         
     
@@ -715,21 +668,13 @@ componentWillUnMount () {
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/01/02/开发中的一些踩坑记录/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/08/29/hexo搭建博客/" id="post_nav-older" class="next-content">
+        <a href="/2019/02/18/nginx学习记录/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
