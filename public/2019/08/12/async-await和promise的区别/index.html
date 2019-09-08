@@ -37,7 +37,7 @@
     
     <title>
         
-            归档: 2019/1 | 
+            async-await和promise的区别 | 
         
         小鱼干喜欢猫
     </title>
@@ -98,6 +98,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/tomorrow-night.min.css?QlnGZk/a4+d8XbwtXBDPiA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -233,15 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://terry-guo.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2019/1 | 小鱼干喜欢猫">
+    <meta property="og:title" content="async-await和promise的区别 | 小鱼干喜欢猫">
     <meta property="og:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta property="og:description" content="只要思想不滑坡，办法总比困难多！">
     
 
     
+        <meta property="article:published_time" content="Mon Aug 12 2019 16:23:51 GMT+0800">
+        <meta property="article:modified_time" content="Mon Aug 12 2019 16:26:12 GMT+0800">
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档: 2019/1 | 小鱼干喜欢猫">
+    <meta name="twitter:title" content="async-await和promise的区别 | 小鱼干喜欢猫">
     <meta name="twitter:description" content="只要思想不滑坡，办法总比困难多！">
     <meta name="twitter:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -249,13 +255,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://terry-guo.github.io/archives/2019/01/index.html">
+        <link rel="canonical" href="https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html">
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html",
+    "headline": "async-await和promise的区别",
+    "datePublished": "Mon Aug 12 2019 16:23:51 GMT+0800",
+    "dateModified": "Mon Aug 12 2019 16:26:12 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Terry Guo",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/images/avatar.jpg"
+        },
+        "description": "只要思想不滑坡，办法总比困难多！"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "小鱼干喜欢猫",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "只要思想不滑坡，办法总比困难多！",
+}
+</script>
 
 
     
@@ -295,158 +331,378 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-promise"><span class="post-toc-text">1  promise</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-promsie有三种状态"><span class="post-toc-text">2 promsie有三种状态</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3promise的优缺点"><span class="post-toc-text">3promise的优缺点</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-为什么用promise？"><span class="post-toc-text">4 为什么用promise？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-Promise-all"><span class="post-toc-text">5. Promise.all()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-Promise-race"><span class="post-toc-text">6 Promise.race()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-async-await-与-promsie区别"><span class="post-toc-text">6 async/await 与 promsie区别</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-async的错误处理"><span class="post-toc-text">7 async的错误处理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-async-await的优缺点"><span class="post-toc-text">8 async-await的优缺点</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2019/01/08/mac中如何美化命令行工具/">mac中如何美化命令行工具</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ​    最近在使用Mac的过程中，发现系统自带的命令行工具不是很好看，而自带的一些主题也不够令我喜欢。于是开启了折腾之路
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2019/01/08/mac中如何美化命令行工具/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/images/avatar.jpg" width="44px" height="44px" alt="Terry Guo's avatar">
-            </div>
-            <div>
-                <strong>Terry Guo</strong>
-                <span>1月 08, 2019</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2019/01/02/开发中的一些踩坑记录/">开发中的一些踩坑记录</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            最近在开发中频繁遇到各种问题，针对这些问题花了一些时间来处理，于是记录下来，方便以后查阅。
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2019/01/02/开发中的一些踩坑记录/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/images/avatar.jpg" width="44px" height="44px" alt="Terry Guo's avatar">
-            </div>
-            <div>
-                <strong>Terry Guo</strong>
-                <span>1月 02, 2019</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                async-await和promise的区别
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/images/avatar.jpg" width="44px" height="44px" alt="Author Avatar">
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Terry Guo</strong>
+        <span>8月 12, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=async-await和promise的区别&url=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=async-await和promise的区别&url=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html&via=Terry Guo" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2019/08/12/async-await和promise的区别/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>为什么要写这篇文章？在面试的时候被问过这个问题，虽然在工作中这两种都用过，但是确实是没考虑过有什么区别，今天再重学一遍。</p>
+<h2 id="1-promise"><a href="#1-promise" class="headerlink" title="1  promise"></a>1  promise</h2><p>Promise,简单来说就是一个容器，里面保存着某个未来才会结束的时间，从语法上来说，Promise是一个对象，从它可以获取异步操作的消息。</p>
+<p>基本语法：</p>
+<pre><code>var p1 = new Promise(test);
+var p2 = p1.then(function (result) {
+    console.log(&#39;成功：&#39; + result);
+});
+var p3 = p2.catch(function (reason) {
+    console.log(&#39;失败：&#39; + reason);
+});
+
+
+//支持链式操作
+p1.then(function (result) {
+    console.log(&#39;成功：&#39; + result);
+}).catch(function (reason) {
+    console.log(&#39;失败：&#39; + reason);
+});
+
+</code></pre><h2 id="2-promsie有三种状态"><a href="#2-promsie有三种状态" class="headerlink" title="2 promsie有三种状态"></a>2 promsie有三种状态</h2><p>ending、fulfilled、rejected(未决定，履行，拒绝)。同一时间只能存在一种状态，且状态一旦改变就不能在变</p>
+<pre><code>1.初始化，状态：pending
+
+2.当调用resolve(成功)，状态：pengding=&gt;fulfilled
+
+3.当调用reject(失败)，状态：pending=&gt;rejected
+</code></pre><h2 id="3promise的优缺点"><a href="#3promise的优缺点" class="headerlink" title="3promise的优缺点"></a>3promise的优缺点</h2><p> 优点：</p>
+<p> 1.Promise 分离了异步数据获取和业务逻辑，有利于代码复用。</p>
+<p> 2.可以采用链式写法</p>
+<p> 3.一旦 Promise 的值确定为fulfilled 或者 rejected 后，不可改变。</p>
+<p> 缺点：</p>
+<p>代码冗余，语义不清。</p>
+<h2 id="4-为什么用promise？"><a href="#4-为什么用promise？" class="headerlink" title="4 为什么用promise？"></a>4 为什么用promise？</h2><p><strong>一</strong>.<strong>解决回调地狱</strong></p>
+<p> 回调地狱：发送多个异步请求时，每个请求之间相互都有关联，会出现第一个请求成功后再做下一个请求的情况。我们这时候往往会用嵌套的方式来解决这种情况，但是这会形成”回调地狱“。如果处理的异步请求越多，那么回调嵌套的就越深。出现的问题：</p>
+<p>1.代码逻辑顺序与执行顺序不一致，不利于阅读与维护。</p>
+<p>2.异步操作顺序变更时，需要大规模的代码重构。</p>
+<p>3.回调函数基本都是匿名函数，bug追踪困难</p>
+<p><strong>2.解决异步</strong></p>
+<p>我们都知道js是单线程执行代码，导致js的很多操作都是异步执行（ajax）的，以下是解决异步的几种方式：</p>
+<p> 1.回调函数(定时器)。</p>
+<p> 2.事件监听。</p>
+<p> 3.发布/订阅。</p>
+<p> 4.Promise对象。(将执行代码和处理结果分开)</p>
+<p> 5.Generator。</p>
+<p>6.ES7的async/await。</p>
+<h2 id="5-Promise-all"><a href="#5-Promise-all" class="headerlink" title="5. Promise.all()"></a>5. Promise.all()</h2><p>多个promise同时使用，其中一个错误会怎样</p>
+<pre><code>let p1 = Promise.resolve(123);
+let p2 = Promise.resolve(&#39;hello&#39;);
+let p3 = Promise.resolve(&#39;success&#39;);
+
+
+Promise.all([p1,p2,p3]).then(result =&gt; {
+    console.log(result); //[ 123, &#39;hello&#39;, &#39;success&#39; ]
+})
+</code></pre><p>Promise.all（）成功之后就是数组类型，当所有状态都是成功状态才返回数组，只要其中有一个的对象是reject的，就返回reject的状态值。</p>
+<pre><code>const pro = (a) =&gt; {
+    return new Promise((resove,reject)=&gt;{
+        if(a==1){
+           setTimeout(()=&gt;{
+            resove(&quot;this is my data&quot;)
+           },2000)
+        }else{
+            reject(&quot;error data&quot;)
+        }
+    })
+}
+const pro2 = () =&gt; {
+    return new Promise((resove,reject)=&gt;{
+        reject(&quot;error data&quot;)
+    })
+}
+Promise.all([pro(1),pro2()]).then((res)=&gt;{
+    console.log(res);
+
+}).catch((err)=&gt;{
+    console.log(&#39;走到了catch里面&#39;);
+    console.log(err); //error data
+})
+</code></pre><p>因为pro2函数会reject一个错误，所以后面的promise.all调用的函数数组中，会走到catch里面</p>
+<h2 id="6-Promise-race"><a href="#6-Promise-race" class="headerlink" title="6 Promise.race()"></a>6 Promise.race()</h2><p>和all同样接受多个对象，不同的是，race()接受的对象中，哪个对象返回的快就返回哪个对象，就如race直译的赛跑这样。如果对象其中有reject状态的，必须catch捕捉到，如果返回的够快，就返回这个状态。race最终返回的只有一个值。</p>
+<pre><code>//用sleep来模仿浏览器的AJAX请求
+function sleep(wait) {
+    return new Promise((res,rej) =&gt; {
+        setTimeout(() =&gt; {
+            res(wait);
+        },wait);
+    });
+}
+
+let p1 = sleep(500);
+let p0 = sleep(2000);
+
+Promise.race([p1,p0]).then(result =&gt; {
+    console.log(result); // 500
+});
+
+let p2 = new Promise((resolve,reject) =&gt; {
+    setTimeout(()=&gt;{
+        reject(&#39;error data&#39;);
+    },1000);
+});
+
+Promise.race([p0,p2]).then(result =&gt; {
+    console.log(result);
+}).catch(result =&gt; {
+    console.log(result); // error data
+});
+</code></pre><h2 id="6-async-await-与-promsie区别"><a href="#6-async-await-与-promsie区别" class="headerlink" title="6 async/await 与 promsie区别"></a>6 async/await 与 promsie区别</h2><p>异步编程的最高境界，就是根本不关心它异步，async函数可以说是异步函数的最终解决方案。</p>
+<p>async-await与promise不存在谁替换谁的关系，因为async-await是寄生于promise的</p>
+<p>基本语法：</p>
+<pre><code>const pro = (a) =&gt; {
+    return new Promise((resove,reject)=&gt;{
+        if(a==1){
+           setTimeout(()=&gt;{
+            resove(&quot;this is my data&quot;)
+           },2000)
+        }else{
+            reject(&quot;error data&quot;)
+        }
+    })
+}
+
+async function abc(){
+    let a = await pro(1)
+    console.log(a); // this is my data
+    console.log(&#39;hello world&#39;);
+}
+abc()
+</code></pre><p>async函数返回一个promise对象</p>
+<p>规则</p>
+<p>1.async表示这是一个async函数，await只能用在这个函数里面</p>
+<p>2.await表示在这里等待promise返回结果之后，再继续执行</p>
+<p>3.await后面应该跟着一个promise对象（跟普通函数也行，只是时候会立即执行，这样async-await就显得多余了）</p>
+<p>4.await必须放在async里面执行</p>
+<p>5.await等待的虽然是promise对象，但是不必写.then()，可以直接得到返回结果(例如上面代码执行后，2秒钟之后会打印出a的结果为 this is my data)</p>
+<h2 id="7-async的错误处理"><a href="#7-async的错误处理" class="headerlink" title="7 async的错误处理"></a>7 async的错误处理</h2><p>try-catch捕捉</p>
+<pre><code>let p = new Promise((resolve,reject) =&gt; {
+    setTimeout(() =&gt; {
+        reject(&#39;error&#39;);
+    },1000);
+});
+
+async function demo(params) {
+    try {
+        let result = await p;
+    }catch(e) {
+        console.log(e);
+    }
+}
+
+demo();
+</code></pre><h2 id="8-async-await的优缺点"><a href="#8-async-await的优缺点" class="headerlink" title="8 async-await的优缺点"></a>8 async-await的优缺点</h2><p>优点：</p>
+<p>1.解决回调地狱的问题</p>
+<p>2.语法后面不用再加 <code>then</code> 链式回调函数</p>
+<p>3.try/catch 使 async 语法的异常捕获更加好用。</p>
+<p>缺点：</p>
+<p>大多浏览器原生不支持，需要经过babel编译，编译过的代码会变得臃肿</p>
+
+        
+    
+
     
 </div>
 
 
-    <script>
-            //背景线条
-            !function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();;
-            
-            </script>
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2019/09/08/js基础系列-一-数组相关/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/02/18/nginx学习记录/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+<script>
+        //背景线条
+        !function(){function n(n,e,t){return n.getAttribute(e)||t}function e(n){return document.getElementsByTagName(n)}function t(){var t=e("script"),o=t.length,i=t[o-1];return{l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)}}function o(){a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function i(){r.clearRect(0,0,a,c);var n,e,t,o,m,l;s.forEach(function(i,x){for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))}),x(i)}var a,c,u,m=document.createElement("canvas"),d=t(),l="c_n"+d.l,r=m.getContext("2d"),x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,1e3/45)},w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,window.onmousemove=function(n){n=n||window.event,y.x=n.clientX,y.y=n.clientY},window.onmouseout=function(){y.x=null,y.y=null};for(var s=[],f=0;d.n>f;f++){var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})}u=s.concat([y]),setTimeout(function(){i()},100)}();;
+        
+        </script>
+
 
 
 
@@ -749,6 +1005,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?M7yscw7fUgU5TeIen76DYQ==", true)</script>
+        
+    
 
 
 
@@ -761,6 +1021,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
