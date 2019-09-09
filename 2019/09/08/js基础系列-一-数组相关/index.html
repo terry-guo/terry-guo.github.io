@@ -37,7 +37,7 @@
     
     <title>
         
-            React生命周期 | 
+            js基础系列(一):数组相关 | 
         
         小鱼干喜欢猫
     </title>
@@ -236,18 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://terry-guo.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="React生命周期 | 小鱼干喜欢猫">
+    <meta property="og:title" content="js基础系列(一):数组相关 | 小鱼干喜欢猫">
     <meta property="og:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta property="og:description" content="只要思想不滑坡，办法总比困难多！">
     
 
     
-        <meta property="article:published_time" content="Sun Oct 07 2018 19:16:08 GMT+0800">
-        <meta property="article:modified_time" content="Thu Dec 20 2018 01:47:14 GMT+0800">
+        <meta property="article:published_time" content="Sun Sep 08 2019 23:50:19 GMT+0800">
+        <meta property="article:modified_time" content="Tue Sep 10 2019 00:38:59 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="React生命周期 | 小鱼干喜欢猫">
+    <meta name="twitter:title" content="js基础系列(一):数组相关 | 小鱼干喜欢猫">
     <meta name="twitter:description" content="只要思想不滑坡，办法总比困难多！">
     <meta name="twitter:image" content="https://terry-guo.github.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -255,7 +255,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://terry-guo.github.io/2018/10/07/React生命周期/index.html">
+        <link rel="canonical" href="https://terry-guo.github.io/2019/09/08/js基础系列-一-数组相关/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -267,10 +267,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://terry-guo.github.io/2018/10/07/React生命周期/index.html",
-    "headline": "React生命周期",
-    "datePublished": "Sun Oct 07 2018 19:16:08 GMT+0800",
-    "dateModified": "Thu Dec 20 2018 01:47:14 GMT+0800",
+    "mainEntityOfPage": "https://terry-guo.github.io/2019/09/08/js基础系列-一-数组相关/index.html",
+    "headline": "js基础系列(一):数组相关",
+    "datePublished": "Sun Sep 08 2019 23:50:19 GMT+0800",
+    "dateModified": "Tue Sep 10 2019 00:38:59 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Terry Guo",
@@ -359,7 +359,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-constructor"><span class="post-toc-text">1.constructor</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-componentWillMount-（组件将要挂载）"><span class="post-toc-text">2.componentWillMount （组件将要挂载）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-componentDidMount（组件渲染完成）"><span class="post-toc-text">3.componentDidMount（组件渲染完成）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-componentWillReceiveProps-nextProps"><span class="post-toc-text">4.componentWillReceiveProps (nextProps)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#5-shouldComponentUpdate-nextProps-nextState"><span class="post-toc-text">5.shouldComponentUpdate(nextProps,nextState)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#6-componentWillUpdate-nextProps-nextState"><span class="post-toc-text">6.componentWillUpdate (nextProps,nextState)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#7-render函数"><span class="post-toc-text">7.render函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#8-componentDidUpdate"><span class="post-toc-text">8.componentDidUpdate</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#9-componentWillUnmount"><span class="post-toc-text">9.componentWillUnmount</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#10-React16新增的生命周期"><span class="post-toc-text">10.React16新增的生命周期</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-1-getDerivedStateFromProps"><span class="post-toc-text">10-1.getDerivedStateFromProps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-2、getSnapshotBeforeUpdate"><span class="post-toc-text">10-2、getSnapshotBeforeUpdate</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#11-生命周期各函数的调用顺序"><span class="post-toc-text">11.生命周期各函数的调用顺序</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一-常用数组方法"><span class="post-toc-text">一,常用数组方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-1-arr-map"><span class="post-toc-text">1-1 arr.map()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-arr-forEach"><span class="post-toc-text">1-2 arr.forEach()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-3-arr-filter"><span class="post-toc-text">1-3 arr.filter()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-4-arr-push-new"><span class="post-toc-text">1-4 arr.push(new)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-5-arr-pop"><span class="post-toc-text">1-5 arr.pop()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-6-arr-shift"><span class="post-toc-text">1-6 arr.shift()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-7-arr-unshift"><span class="post-toc-text">1-7 arr.unshift()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-8-arr-isArray"><span class="post-toc-text">1-8 arr.isArray()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-9-arr-concat"><span class="post-toc-text">1-9 arr.concat()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-10-arr-toString"><span class="post-toc-text">1-10 arr.toString()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-11-arr-join"><span class="post-toc-text">1-11 arr.join()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-12-arr-splice-开始位置，-删除的个数，元素"><span class="post-toc-text">1-12 arr.splice(开始位置， 删除的个数，元素)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-13-arr-slice"><span class="post-toc-text">1-13 arr.slice()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-16-indexOf-和-lastIndexOf"><span class="post-toc-text">1-16 indexOf 和 lastIndexOf</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二-es6新增的数组操作"><span class="post-toc-text">二,es6新增的数组操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-1-reduce"><span class="post-toc-text">2-1 reduce()</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-1-数组求和"><span class="post-toc-text">2-1-1 数组求和</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-2-数组求最大值"><span class="post-toc-text">2-1-2 数组求最大值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-3-数组去重"><span class="post-toc-text">2-1-3 数组去重</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-13-arr-some"><span class="post-toc-text">2-13 arr.some()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-5-arr-map"><span class="post-toc-text">2-5 arr.map()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-6-arr-find"><span class="post-toc-text">2-6 arr.find()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-7-arr-findIndex"><span class="post-toc-text">2-7 arr.findIndex()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-8-arr-entries"><span class="post-toc-text">2-8 arr.entries()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-9-arr-values"><span class="post-toc-text">2-9 arr.values()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-10-arr-keys"><span class="post-toc-text">2-10 arr.keys()</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三-数组去重"><span class="post-toc-text">三.数组去重</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-1-reduce"><span class="post-toc-text">1-1.reduce</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-2-for循环"><span class="post-toc-text">1-2 for循环</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -391,7 +391,7 @@
         
     
             <p class="article-headline-p">
-                React生命周期
+                js基础系列(一):数组相关
             </p>
         </div>
 
@@ -410,7 +410,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Terry Guo</strong>
-        <span>10月 07, 2018</span>
+        <span>9月 08, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -441,7 +441,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=React生命周期&url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=js基础系列(一):数组相关&url=https://terry-guo.github.io/2019/09/08/js基础系列-一-数组相关/index.html&pic=https://terry-guo.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -450,7 +450,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React生命周期&url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html&via=Terry Guo" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=js基础系列(一):数组相关&url=https://terry-guo.github.io/2019/09/08/js基础系列-一-数组相关/index.html&via=Terry Guo" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -459,7 +459,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2018/10/07/React生命周期/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://terry-guo.github.io/2019/09/08/js基础系列-一-数组相关/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -468,7 +468,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2018/10/07/React生命周期/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://terry-guo.github.io/2019/09/08/js基础系列-一-数组相关/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -492,210 +492,425 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>​    一直没有梳理过react中的生命周期，因为平时常用的生命周期就那么几个，今天就系统的了解一下react中用到的生命周期。</p>
-<p>​    下面看一下一个组件的基本构造。</p>
-<pre><code>import React,{ Component } from &#39;react&#39;;
+        <h1 id="一-常用数组方法"><a href="#一-常用数组方法" class="headerlink" title="一,常用数组方法"></a>一,常用数组方法</h1><h2 id="1-1-arr-map"><a href="#1-1-arr-map" class="headerlink" title="1-1 arr.map()"></a>1-1 arr.map()</h2><blockquote>
+<p>此方法是将数组中的每个元素调用一个提供的函数，结果作为一个新的数组返回，并没有改变原来的数组</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5]
+let newArr = arr.map(x =&gt; x*2)
+console.log(arr);       //arr= [1, 2, 3, 4, 5]   原数组保持不变
+console.log(newArr);    //newArr = [2, 4, 6, 8, 10] 返回新数组
 
-class NewDemo extends Component {
-  constructor(props,context) {
-      super(props,context)
-      this.state = {
-          //定义state
-      }
-  }
-componentWillMount () {
-}
-componentDidMount () {
-}
-componentWillReceiveProps (nextProps) {
-}
-shouldComponentUpdate (nextProps,nextState) {
-}
-componentWillUpdate (nextProps,nextState) {
-}
-componentDidUpdate (prevProps,prevState) {
-}
-render () {
-    return (
-        &lt;div&gt;&lt;/div&gt;
-    )
-}
-componentWillUnmount () {
-}
-}
-export default NewDemo;
+</code></pre><h2 id="1-2-arr-forEach"><a href="#1-2-arr-forEach" class="headerlink" title="1-2 arr.forEach()"></a>1-2 arr.forEach()</h2><blockquote>
+<p>此方法是将数组中的每个元素执行传进提供的函数，没有返回值，直接改变原数组，注意和map方法区分</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5]
+num.forEach(x =&gt; x*2)
+   // arr = [2, 4, 6, 8, 10]  数组改变,注意和map区分
+</code></pre><h2 id="1-3-arr-filter"><a href="#1-3-arr-filter" class="headerlink" title="1-3 arr.filter()"></a>1-3 arr.filter()</h2><blockquote>
+<p>此方法是将所有元素进行判断，将满足条件的元素作为一个新的数组返回</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5]
+let isBigEnough =&gt; value =&gt; value &gt;= 3
+let newArr = arr.filter(isBigEnough )
+    //newNum = [3, 4, 5] 满足条件的元素返回为一个新的数组
+</code></pre><h2 id="1-4-arr-push-new"><a href="#1-4-arr-push-new" class="headerlink" title="1-4 arr.push(new)"></a>1-4 arr.push(new)</h2><blockquote>
+<p>此方法是在数组的后面添加新加元素，此方法改变了数组的长度</p>
+</blockquote>
+<pre><code>let arr = [1,2]
+arr.push(3)
+console.log(arr) //[1,2,3x]
+</code></pre><h2 id="1-5-arr-pop"><a href="#1-5-arr-pop" class="headerlink" title="1-5 arr.pop()"></a>1-5 arr.pop()</h2><blockquote>
+<p>此方法在数组后面删除最后一个元素，并返回数组，此方法改变了数组的长度：</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5]
+    arr.pop()
+    console.log(arr) //[1, 2, 3, 4]
+    console.log(arr.length) //4
+</code></pre><h2 id="1-6-arr-shift"><a href="#1-6-arr-shift" class="headerlink" title="1-6 arr.shift()"></a>1-6 arr.shift()</h2><blockquote>
+<p>此方法在数组后面删除第一个元素，并返回数组，此方法改变了数组的长度</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5]
+    arr.shift()
+    console.log(arr) //[2, 3, 4, 5]
+    console.log(arr.length) //4 
+</code></pre><h2 id="1-7-arr-unshift"><a href="#1-7-arr-unshift" class="headerlink" title="1-7 arr.unshift()"></a>1-7 arr.unshift()</h2><blockquote>
+<p>此方法是将一个或多个元素添加到数组的开头，并返回新数组的长度</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5]
+    arr.unshift(6, 7)
+    console.log(arr) //[6, 7, 2, 3, 4, 5]
+    console.log(arr.length) //7 
+</code></pre><h2 id="1-8-arr-isArray"><a href="#1-8-arr-isArray" class="headerlink" title="1-8 arr.isArray()"></a>1-8 arr.isArray()</h2><blockquote>
+<p>判断一个对象是不是数组，返回的是布尔值</p>
+</blockquote>
+<pre><code>let arr = [1,2]
+Array.isArray(arr) // true
+</code></pre><h2 id="1-9-arr-concat"><a href="#1-9-arr-concat" class="headerlink" title="1-9 arr.concat()"></a>1-9 arr.concat()</h2><blockquote>
+<p>此方法是一个可以将多个数组拼接成一个数组</p>
+</blockquote>
+<pre><code>let arr1 = [1, 2, 3],
+    arr2 = [4, 5]
+  let arr = arr1.concat(arr2)
+  console.log(arr)//[1, 2, 3, 4, 5]
+</code></pre><h2 id="1-10-arr-toString"><a href="#1-10-arr-toString" class="headerlink" title="1-10 arr.toString()"></a>1-10 arr.toString()</h2><blockquote>
+<p>此方法将数组转化为字符串</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5];
+let str = arr.toString()
+   console.log(str)// 1,2,3,4,5
+
+let str1 = arr.toString()
+let str2 = arr.toString(&#39;,&#39;)
+let str3 = arr.toString(&#39;##&#39;)
+   console.log(str1)// 12345
+   console.log(str2)// 1,2,3,4,5
+   console.log(str3)// 1##2##3##4##5
+</code></pre><h2 id="1-11-arr-join"><a href="#1-11-arr-join" class="headerlink" title="1-11 arr.join()"></a>1-11 arr.join()</h2><blockquote>
+<p>此方法也是将数组转化为字符串</p>
+</blockquote>
+<pre><code>let arr = [1, 2, 3, 4, 5];
+arr.join(&#39;-&#39;) //1-2-3-4-5
+</code></pre><h2 id="1-12-arr-splice-开始位置，-删除的个数，元素"><a href="#1-12-arr-splice-开始位置，-删除的个数，元素" class="headerlink" title="1-12 arr.splice(开始位置， 删除的个数，元素)"></a>1-12 arr.splice(开始位置， 删除的个数，元素)</h2><blockquote>
+<p>　万能方法，可以实现增删改，然后返回被删除的项目。。注意：该方法会改变原始数组</p>
+</blockquote>
+<pre><code>//1.新增元素
+let a = [1, 2, 3, 4, 5];
+let a1 =  a.splice(2, 0, &#39;haha&#39;)
+console.log(a) //[1, 2, &#39;haha&#39;, 3, 4, 5]新增一个元素
+console.log(a1) //[]  返回被删除的项目
+
+// 2.删除元素
+let b = [1, 2, 3, 4, 5];
+let b1 =  b.splice(2, 3)
+console.log(b); // [1,2]
+console.log(b1) //[3, 4, 5]
+
+// 3.替换元素
+let c = [1, 2, 3, 4, 5];
+let c1 =  c.splice(2, 1,&#39;haha&#39;)
+console.log(c); // [ 1, 2, &#39;haha&#39;, 4, 5 ]
+console.log(c1) //[3]
+</code></pre><h2 id="1-13-arr-slice"><a href="#1-13-arr-slice" class="headerlink" title="1-13 arr.slice()"></a>1-13 arr.slice()</h2><blockquote>
+<p>splice() 方法可删除从 index 处开始的零个或多个元素，并且用参数列表中声明的一个或多个值来替换那些被删除的元素。如果从 arrayObject 中删除了元素，则返回的是含有被删除的元素的数组。splice() 方法会直接对数组进行修改。</p>
+</blockquote>
+<pre><code>let arr = [1,2,3,4,5,6]
+let newArr = arr.slice(1,2)
+console.log(newArr); //[ 2 ]
+console.log(arr); //[ 1, 2, 3, 4, 5, 6 ]
+</code></pre><p>##1-14  arr.sort()</p>
+<blockquote>
+<p>按照 Unicode code 位置排序，默认升序</p>
+</blockquote>
+<pre><code>let arr = [21,12,3,4,5,6]
+
+arr.sort()
+console.log(arr); //[21,12,3,4,5,6]
 </code></pre><ul>
-<li><p>React 16.3 新增的生命周期方法</p>
-<p>​    1.getDerivedStateFromProps()</p>
-<p>​    2.getSnapshotBeforeUpdate()</p>
-</li>
+<li>升序</li>
 </ul>
+<pre><code>let arr = [21,12,3,44,5,6]
+
+arr.sort((a,b)=&gt;{
+    return a-b
+})
+console.log(arr); //[ 3, 5, 6, 12, 21, 44 ]
+</code></pre><ul>
+<li>降序</li>
+</ul>
+<pre><code>let arr = [21,12,3,44,5,6]
+
+arr.sort((a,b)=&gt;{
+    return b-a
+})
+console.log(arr); //[ 44, 21, 12, 6, 5, 3 ]
+</code></pre><p>##1-15 arr.reverse()</p>
+<blockquote>
+<p>reverse() 方法用于颠倒数组中元素的顺序。返回的是颠倒后的数组，会改变原数组。</p>
+</blockquote>
+<pre><code>let arr = [21,12,3,44,5,6]
+
+arr.reverse()
+console.log(arr); //[ 6, 5, 44, 3, 12, 21 ]
+</code></pre><h2 id="1-16-indexOf-和-lastIndexOf"><a href="#1-16-indexOf-和-lastIndexOf" class="headerlink" title="1-16 indexOf 和 lastIndexOf"></a>1-16 indexOf 和 lastIndexOf</h2><blockquote>
+<p>都是查找数组元素 出现的位置。都接受两个参数：查找的值、查找起始位置<br>不存在，返回 -1 ；存在，返回位置。</p>
+<p>indexOf 是从前往后查找， lastIndexOf 是从后往前查找。</p>
+</blockquote>
+<pre><code>let arr = [21,12,3,44,5,6]
+console.log(arr.indexOf(12)); //1
+</code></pre><h1 id="二-es6新增的数组操作"><a href="#二-es6新增的数组操作" class="headerlink" title="二,es6新增的数组操作"></a>二,es6新增的数组操作</h1><h2 id="2-1-reduce"><a href="#2-1-reduce" class="headerlink" title="2-1 reduce()"></a>2-1 reduce()</h2><p>语法</p>
+<pre><code>arr.reduce(function(prev,cur,index,arr){
+...
+}, init);
+</code></pre><p><strong>arr</strong> 表示原数组；<br><strong>prev</strong> 表示上一次调用回调时的返回值，或者初始值 init;<br><strong>cur</strong> 表示当前正在处理的数组元素；<br><strong>index</strong> 表示当前正在处理的数组元素的索引，若提供 init 值，则索引为0，否则索引为1；<br><strong>init</strong> 表示初始值。</p>
+<h3 id="2-1-1-数组求和"><a href="#2-1-1-数组求和" class="headerlink" title="2-1-1 数组求和"></a>2-1-1 数组求和</h3><pre><code>let arr = [1,2,3,1,2]
+getSum = (all,now) =&gt; {
+    return  all + now
+}
+let sum = arr.reduce(getSum)
+console.log(`sum=${sum}`);  // sum=9
+
+</code></pre><h3 id="2-1-2-数组求最大值"><a href="#2-1-2-数组求最大值" class="headerlink" title="2-1-2 数组求最大值"></a>2-1-2 数组求最大值</h3><pre><code>let arr = [1,2,3,1,2]
+getMax = (a,b) =&gt; {
+    return Math.max(a,b)
+}
+let max = arr.reduce(getMax)
+console.log(`max=${max}`); // max=3
+</code></pre><h3 id="2-1-3-数组去重"><a href="#2-1-3-数组去重" class="headerlink" title="2-1-3 数组去重"></a>2-1-3 数组去重</h3><pre><code>let arr = [1,2,3,1,2]
+getOnlyOne = (total,cur) =&gt; {
+    total.indexOf(cur) === -1 &amp;&amp; total.push(cur)
+    return total
+}
+let newArr = arr.reduce(getOnlyOne,[])
+console.log(newArr); // [1,2,3]
+</code></pre><p>##2-2 arr.every()</p>
+<blockquote>
+<p>定义和用法</p>
+</blockquote>
+<p>every() 方法用于检测数组所有元素是否都符合指定条件（通过函数提供）。</p>
+<p>every() 方法使用指定函数检测数组中的所有元素：</p>
 <ul>
-<li><p>逐渐废弃的生命周期方法：</p>
-<p>​    1.componentWillMount()</p>
-<p>​    2.componentWillReceiveProps()</p>
-<p>​    3.componentWillUpdate()</p>
-</li>
+<li>如果数组中检测到有一个元素不满足，则整个表达式返回 <em>false</em> ，且剩余的元素不会再进行检测。</li>
+<li><strong>如果所有元素都满足条件，则返回 true</strong>。</li>
 </ul>
-<h1 id="1-constructor"><a href="#1-constructor" class="headerlink" title="1.constructor"></a>1.constructor</h1><p>react组件的构造函数在挂载之前被调用。在实现<code>React.Component</code>构造函数时，需要先在添加其他内容前，调用<code>super(props)</code>，用来将父组件传来的<code>props</code>绑定到这个类中，使用<code>this.props</code>将会得到。</p>
-<p>官方建议不要在<code>constructor</code>引入任何具有副作用和订阅功能的代码，这些应当在<code>componentDidMount()</code>中写入。</p>
-<p><code>constructor</code>中应当做些初始化的动作，如：初始化<code>state</code>，将事件处理函数绑定到类实例上，但也不要使用<code>setState()</code>。如果没有必要初始化state或绑定方法，则不需要构造<code>constructor</code>，或者把这个组件换成纯函数写法。</p>
-<p>​    constructor参数接受两个参数props,context 可以获取到父组件传下来的的props,context,如果你想在        constructor<strong>构造函数内部(注意是内部哦，在组件其他地方是可以直接接收的)</strong>使用props或context,则需要传入，并传入super对象。 </p>
-<pre><code> constructor(props,context) {
-  super(props,context)
-  console.log(this.props,this.context) // 在内部可以使用props和context
-}
-</code></pre><p>1 constructor必须用super()初始化this, 可以绑定事件到this</p>
-<p>2 如果你在constructor中要使用this.props, 就必须给super加参数, super(props)；</p>
-<p>3 无论有没有constructor, render中都可以使用this.props, 默认自带</p>
-<p>4 如果组件没有声明constructor, react会默认添加一个空的constructor </p>
-<p>5 ES6采用的是先创建父类的实例this（故要先调用 super( )方法），完后再用子类的构造函数修改this</p>
-<h1 id="2-componentWillMount-（组件将要挂载）"><a href="#2-componentWillMount-（组件将要挂载）" class="headerlink" title="2.componentWillMount （组件将要挂载）"></a>2.componentWillMount （组件将要挂载）</h1><p>1、组件刚经历constructor,初始完数据 </p>
-<p>2、组件还未进入render，组件还未渲染完成，dom还未渲染 </p>
-<p>componentWillMount 一般用的比较少，更多的是用在服务端渲染，（我还未使用过react服务端渲染哈，所以也写不了很多） </p>
-<p>但是有一点需要注意的，一般ajax请求不要在这个生命周期里面进行，虽然有些情况下并不会出错，但是如果ajax请求过来的数据是空，那么会影响页面的渲染，可能看到的就是空白。 </p>
-<h1 id="3-componentDidMount（组件渲染完成）"><a href="#3-componentDidMount（组件渲染完成）" class="headerlink" title="3.componentDidMount（组件渲染完成）"></a>3.componentDidMount（组件渲染完成）</h1><p>组件完成装载（已经插入 DOM 树）时，触发该方法。组件第一次渲染完成，此时dom节点已经生成，可以在这里调用ajax请求，返回数据setState后组件会重新渲染 。 </p>
-<p>一般用于下面场景</p>
-<blockquote>
-<p>1.异步请求 ajax<br>2.添加事件绑定（注意在 componentWillUnmount 中取消，以免造成内存泄漏）</p>
-</blockquote>
-<h1 id="4-componentWillReceiveProps-nextProps"><a href="#4-componentWillReceiveProps-nextProps" class="headerlink" title="4.componentWillReceiveProps (nextProps)"></a>4.componentWillReceiveProps (nextProps)</h1><p>componentWillReceiveProps在接受父组件改变后的props需要重新渲染组件时用到的比较多 </p>
-<pre><code>class ExampleComponent extends React.Component {
-  state = {
-    isScrollingDown: false,
-  };
+<p><strong>注意：</strong> every() 不会对空数组进行检测。</p>
+<p><strong>注意：</strong> every() 不会改变原始数组。</p>
+<ul>
+<li>语法</li>
+</ul>
+<pre><code>语法：array.every(function(item,index,array）{
+               //item:当前元素的值；
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.currentRow !== nextProps.currentRow) {
-      this.setState({
-        isScrollingDown:nextProps.currentRow
-      });
-    }
-  }
-}
-</code></pre><p>这个方法将被弃用，推荐使用 getDerivedStateFromProps 代替。 </p>
-<h1 id="5-shouldComponentUpdate-nextProps-nextState"><a href="#5-shouldComponentUpdate-nextProps-nextState" class="headerlink" title="5.shouldComponentUpdate(nextProps,nextState)"></a>5.shouldComponentUpdate(nextProps,nextState)</h1><p>​    返回一个布尔值。 </p>
-<p>​    唯一用于控制组件重新渲染的生命周期，由于在react中，setState以后，state发生变化，组件会进入重新渲染的流程，（暂时这么理解，其实setState以后有些情况并不会重新渲染，比如<strong>数组引用不变</strong>）在这里return false可以阻止组件的更新<br>     该方法通过返回 true 或者 false 来确定是否需要触发新的渲染。返回 false， 则不会触发后续的 componentWillUpdate()、render() 和 componentDidUpdate()（但是 state 变化还是可能引起子组件重新渲染）。</p>
-<p>所以通常通过这个方法对 props 和 state 做比较，从而避免一些不必要的渲染。</p>
-<h1 id="6-componentWillUpdate-nextProps-nextState"><a href="#6-componentWillUpdate-nextProps-nextState" class="headerlink" title="6.componentWillUpdate (nextProps,nextState)"></a>6.componentWillUpdate (nextProps,nextState)</h1><p>shouldComponentUpdate返回true以后，组件进入重新渲染的流程，进入componentWillUpdate,这里同样可以拿到nextProps和nextState 。这个平时倒是用的不多。</p>
-<h1 id="7-render函数"><a href="#7-render函数" class="headerlink" title="7.render函数"></a>7.render函数</h1><p><strong>用于将模板转为 HTML 语言，并插入指定的 DOM 节点。</strong> </p>
-<p>render函数会插入jsx生成的dom结构，react会生成一份虚拟dom树，在每一次组件更新时，在此react会通过其diff算法比较更新前后的新旧DOM树，比较以后，找到最小的有差异的DOM节点，并重新渲染 </p>
-<pre><code>ReactDOM.render(
-  &lt;h1&gt;Hello, world!&lt;/h1&gt;,
-  document.getElementById(&#39;example&#39;)
-);
-</code></pre><p>上面代码将一个 h1 标题，插入 example 节点，输出一个h1标签的Hello, world!</p>
-<h1 id="8-componentDidUpdate"><a href="#8-componentDidUpdate" class="headerlink" title="8.componentDidUpdate"></a>8.componentDidUpdate</h1><p>在组件完成更新后立即调用。在初始化时不会被调用。 </p>
-<p>组件一次重新渲染的过程，下面5处打印出来的state应该是相同的。 </p>
-<pre><code>componentWillReceiveProps (nextProps,nextState) {
-    this.setState({
-        fengfeng:nextProps.fengfeng
-    },()=&gt;{
-        console.log(this.state.fengfeng) //1
-    })
+                    //index:当前元素的索引；
 
-}
-shouldComponentUpdate (nextProps,nextState) {
-    console.log(nextState.fengfeng)  //2
-}
-componentWillUpdate (nextProps,nextState) {
-    console.log(nextState.fengfeng)  //3
-}
-componentDidUpdate (prevProps,prevState) {
-    console.log(this.state.fengfeng) //5
-}
-render () {
-    console.log(this.state.fengfeng) //4
-    return (
-        &lt;div&gt;&lt;/div&gt;
-    )
-}
-</code></pre><h1 id="9-componentWillUnmount"><a href="#9-componentWillUnmount" class="headerlink" title="9.componentWillUnmount"></a>9.componentWillUnmount</h1><p>在组件从 DOM 中移除之前立刻被调用。 </p>
-<p>componentWillUnmount也是会经常用到的一个生命周期 </p>
-<blockquote>
-<p>1.clear你在组建中所有的setTimeout,setInterval </p>
-<p>2.移除所有组建中的监听 removeEventListener </p>
-<p>3.也许你会经常遇到这个warning: </p>
-</blockquote>
-<pre><code>Can only update a mounted or mounting component. This usually means you called setState() on an       
- unmounted component. This is a no-op. Please check the code for the undefined component.
-</code></pre><p>实际的原因是因为在组件挂载（mounted）之后进行了异步操作，比如ajax请求或者设置了定时器等，而你在callback中进行了setState操作。当你切换路由时，组件已经被卸载（unmounted）了，此时异步操作中callback还在执行，请求还未完成，setState没有得到值。因此会报warning 。</p>
-<blockquote>
-<p>我一般是这么解决的</p>
-</blockquote>
-<pre><code>   componentWillUnmount() {
-        //重写组件的setState方法，直接返回空
-        this.setState = (state, callback) =&gt; {
-            return;
-        };
-    }
-</code></pre><blockquote>
-<p>其实还有两种解决方法</p>
-<p>1、<strong>在卸载的时候对所有的操作进行清除（例如：abort你的ajax请求或者清除定时器）</strong> </p>
-</blockquote>
-<pre><code>componentDidMount () {
-    //1.ajax请求
-    $.ajax(&#39;你的请求&#39;,{})
-        .then(res =&gt; {
-            this.setState({
-                aa:true
-            })
-        })
-        .catch(err =&gt; {})
-    //2.定时器
-    timer = setTimeout(() =&gt; {
-        //dosomething
-    },1000)
-}
-componentWillUnMount  () {
-    //1.ajax请求
-    $.ajax.abort()
-    //2.定时器
-    clearTimeout(timer)
-}
-</code></pre><blockquote>
-<p>2、<strong>设置一个flag，当unmount的时候重置这个flag</strong> </p>
-</blockquote>
-<pre><code>componentDidMount () {
-    this._isMounted = true;
-    $.ajax(&#39;你的请求&#39;,{})
-        .then(res =&gt; {
-            if(this._isMounted){
-                this.setState({
-                    aa:true
+                    // array:当前元素的数组对象；
+
                 })
-            }
-        })
-        .catch(err =&gt; {})
-}
-componentWillUnMount () {
-    this._isMounted = false;
+</code></pre><ul>
+<li>用法</li>
+</ul>
+<pre><code>let a = [1,2,3,4].every((item)=&gt;{return item &gt; 5})
+console.log(a) // false
+
+let b = [1,2,3,4].every((item)=&gt;{return item &gt; 2})
+console.log(b) // false
+
+let c = [1,2,3,4].every((item)=&gt;{return item &gt;= 1})
+console.log(c) // true
+</code></pre><h2 id="2-13-arr-some"><a href="#2-13-arr-some" class="headerlink" title="2-13 arr.some()"></a>2-13 arr.some()</h2><blockquote>
+<p>定义和用法</p>
+</blockquote>
+<p>some() 方法用于检测数组中的元素是否满足指定条件（函数提供）。</p>
+<p>some() 方法会依次执行数组的每个元素：</p>
+<ul>
+<li><strong>如果有一个元素满足条件，则表达式返回<em>true</em></strong> , 剩余的元素不会再执行检测。</li>
+<li>如果没有满足条件的元素，则返回false。</li>
+</ul>
+<p><strong>注意：</strong> some() 不会对空数组进行检测。</p>
+<p><strong>注意：</strong> some() 不会改变原始数组。</p>
+<ul>
+<li>语法</li>
+</ul>
+<pre><code>语法：array.some(function(item,index,array){
+                    //item:当前元素的值；
+
+                    //index:当前元素的索引；
+
+                    // array:当前元素的数组对象；
+
+                })
+</code></pre><ul>
+<li>用法</li>
+</ul>
+<pre><code>let a = [1,2,3,4].some((item)=&gt;{return item&gt;5})
+console.log(a) // false
+
+let b = [1,2,3,4].some((item)=&gt;{return item&lt;2})
+console.log(b) // true
+
+let c = [1,2,3,4].some((item)=&gt;{return item&lt;1})
+console.log(c) // false
+</code></pre><p>##2-4 arr.filfter()</p>
+<blockquote>
+<p>定义和用法</p>
+</blockquote>
+<p>filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。</p>
+<p><strong>注意：</strong> filter() 不会对空数组进行检测。</p>
+<p><strong>注意：</strong> filter() 不会改变原始数组。</p>
+<pre><code>let arr = [21,12,3,44,5,6]
+let a = arr.filter((item)=&gt;{
+    return item &gt; 10
+})
+console.log(a); //[ 21, 12, 44 ]
+console.log(arr); //[ 21, 12, 3, 44, 5, 6 ]
+</code></pre><h2 id="2-5-arr-map"><a href="#2-5-arr-map" class="headerlink" title="2-5 arr.map()"></a>2-5 arr.map()</h2><blockquote>
+<p>定义和用法</p>
+</blockquote>
+<p>map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。</p>
+<p>map() 方法按照原始数组元素顺序依次处理元素。</p>
+<p><strong>注意：</strong> map() 不会对空数组进行检测。</p>
+<p><strong>注意：</strong> map() 不会改变原始数组。返回每次函数调用的结果组成一个新数组</p>
+<blockquote>
+<p>语法</p>
+</blockquote>
+<pre><code>array.map(function(currentValue,index,arr), thisValue)
+</code></pre><ul>
+<li>currentValue   必须。当前元素的值</li>
+<li>index                可选。当前元素的索引值</li>
+<li>arr                    可选。当前元素属于的数组对象</li>
+</ul>
+<blockquote>
+<p>用法</p>
+</blockquote>
+<pre><code>let arr = [21,12,3,44,5,6]
+let a = arr.map((item)=&gt;{
+    return item &gt; 10
+})
+console.log(a); //[ true, true, false, true, false, false ]
+console.log(arr); //[ 21, 12, 3, 44, 5, 6 ]
+</code></pre><h2 id="2-6-arr-find"><a href="#2-6-arr-find" class="headerlink" title="2-6 arr.find()"></a>2-6 arr.find()</h2><blockquote>
+<p>定义和用法</p>
+</blockquote>
+<p>find() 方法返回通过测试（函数内判断）的数组的第一个元素的值。</p>
+<p>find() 方法为数组中的每个元素都调用一次函数执行：</p>
+<ul>
+<li>当数组中的元素在测试条件时返回 <em>true</em> 时, find() 返回符合条件的元素，之后的值不会再调用执行函数。</li>
+<li>如果没有符合条件的元素返回 undefined</li>
+</ul>
+<p><strong>注意:</strong> find() 对于空数组，函数是不会执行的。</p>
+<p><strong>注意:</strong> find() 并没有改变数组的原始值。</p>
+<blockquote>
+<p>语法</p>
+</blockquote>
+<pre><code>array.find(function(currentValue, index, arr),thisValue)
+</code></pre><ul>
+<li>currentValue   必须。当前元素的值</li>
+<li>index                可选。当前元素的索引值</li>
+<li>arr                    可选。当前元素属于的数组对象</li>
+</ul>
+<blockquote>
+<p>用法</p>
+</blockquote>
+<pre><code>let arr = [4,22,3,44,5,6]
+let a = arr.find((item)=&gt;{
+    return item &gt; 10
+})
+console.log(a); //2
+console.log(arr); //[ 4, 22, 3, 44, 5, 6 ]
+</code></pre><h2 id="2-7-arr-findIndex"><a href="#2-7-arr-findIndex" class="headerlink" title="2-7 arr.findIndex()"></a>2-7 arr.findIndex()</h2><blockquote>
+<p>定义和用法</p>
+</blockquote>
+<p>findIndex() 方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置。</p>
+<p>findIndex() 方法为数组中的每个元素都调用一次函数执行：</p>
+<ul>
+<li>当数组中的元素在测试条件时返回 <em>true</em> 时, findIndex() 返回符合条件的元素的索引位置，之后的值不会再调用执行函数。</li>
+<li>如果没有符合条件的元素返回 -1</li>
+</ul>
+<p><strong>注意:</strong> findIndex() 对于空数组，函数是不会执行的。</p>
+<p><strong>注意:</strong> findIndex() 并没有改变数组的原始值。</p>
+<blockquote>
+<p>语法</p>
+</blockquote>
+<pre><code>array.findIndex(function(currentValue, index, arr), thisValue)
+</code></pre><blockquote>
+<p>用法</p>
+</blockquote>
+<pre><code>let arr = [4,22,3,44,5,6]
+let a = arr.findIndex((item)=&gt;{
+    return item &gt; 10
+})
+console.log(a); //1
+console.log(arr); //[ 4, 22, 3, 44, 5, 6 ]
+</code></pre><h2 id="2-8-arr-entries"><a href="#2-8-arr-entries" class="headerlink" title="2-8 arr.entries()"></a>2-8 arr.entries()</h2><p>entries() 方法返回一个数组的迭代对象，该对象包含数组的键值对 (key/value)。</p>
+<p>迭代对象中数组的索引值作为 key， 数组元素作为 value。</p>
+<pre><code>let arr = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+for(let item of arr.entries()){
+    console.log(item); 
 }
 
-</code></pre><p>不过根据我的实际经验，还是重写组件的setState方法最管用。</p>
-<h1 id="10-React16新增的生命周期"><a href="#10-React16新增的生命周期" class="headerlink" title="10.React16新增的生命周期"></a>10.React16新增的生命周期</h1><h2 id="10-1-getDerivedStateFromProps"><a href="#10-1-getDerivedStateFromProps" class="headerlink" title="10-1.getDerivedStateFromProps"></a>10-1.getDerivedStateFromProps</h2><p><code>getDerivedStateFromProps</code>在组件实例化后，和接受新的<code>props</code>后被调用。他返回一个对象来更新状态，或者返回null表示新的props不需要任何state的更新。</p>
-<p>如果是由于父组件的props更改，所带来的重新渲染，也会触发此方法。</p>
-<p>调用<code>steState()</code>不会触发<code>getDerivedStateFromProps()</code>。</p>
-<h2 id="10-2、getSnapshotBeforeUpdate"><a href="#10-2、getSnapshotBeforeUpdate" class="headerlink" title="10-2、getSnapshotBeforeUpdate"></a>10-2、getSnapshotBeforeUpdate</h2><pre><code> getSnapshotBeforeUpdate(prevProps, prevState) {
-    // ...
+/*
+[ 0, &#39;Banana&#39; ]
+[ 1, &#39;Orange&#39; ]
+[ 2, &#39;Apple&#39; ]
+[ 3, &#39;Mango&#39; ]
+ */
+</code></pre><h2 id="2-9-arr-values"><a href="#2-9-arr-values" class="headerlink" title="2-9 arr.values()"></a>2-9 arr.values()</h2><p>返回迭代器：返回键值对的value。（对比参考arr.entries()）</p>
+<pre><code>let arr = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+for(let item of arr.values()){
+    console.log(item); 
+}
+
+/**
+ Banana
+Orange
+Apple
+Mango
+ */
+</code></pre><h2 id="2-10-arr-keys"><a href="#2-10-arr-keys" class="headerlink" title="2-10 arr.keys()"></a>2-10 arr.keys()</h2><p>keys() 方法用于从数组创建一个包含数组键的可迭代对象。</p>
+<p>如果对象是数组返回 true，否则返回 false。</p>
+<pre><code>let arr = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+for(let item of arr.keys()){
+    console.log(item); 
+}
+
+/**
+0
+1
+2
+3
+ */
+</code></pre><h1 id="三-数组去重"><a href="#三-数组去重" class="headerlink" title="三.数组去重"></a>三.数组去重</h1><p>主要介绍数组中包含对象的时候需要做去重处理的方法</p>
+<h3 id="1-1-reduce"><a href="#1-1-reduce" class="headerlink" title="1-1.reduce"></a>1-1.reduce</h3><pre><code>var arr = [
+    { name: &quot;张三&quot;, num: &quot;1&quot; },
+    { name: &quot;李四&quot;, num: &quot;11&quot; },
+    { name: &quot;王五&quot;, num: &quot;12&quot; },
+    { name: &quot;张三&quot;, num: &quot;13&quot; },
+    { name: &quot;李四&quot;, num: &quot;1&quot; },
+    { name: &quot;王五&quot;, num: &quot;12&quot; }
+  ]
+
+  /**
+   * 
+   * @param {*} arr 需要去重的原数组 
+   * @param {*} name  去重字段
+   * @return  去重之后的新数组
+   */
+ function arrayUnique2(arr, name) {
+    var hash = {};
+    return arr.reduce(function (item, next) {
+      hash[next[name]] ? &#39;&#39; : hash[next[name]] = true &amp;&amp; item.push(next);
+      return item;
+    }, []);
   }
-</code></pre><p>新的<code>getSnapshotBeforeUpdate</code>生命周期在更新之前被调用（例如，在DOM被更新之前）。此生命周期的返回值将作为第三个参数传递给<code>componentDidUpdate</code>。 （这个生命周期不是经常需要的，但可以用于在恢复期间手动保存滚动位置的情况。）</p>
-<p>与<code>componentDidUpdate</code>一起，这个新的生命周期将覆盖旧版<code>componentWillUpdate</code>的所有用例。</p>
-<h1 id="11-生命周期各函数的调用顺序"><a href="#11-生命周期各函数的调用顺序" class="headerlink" title="11.生命周期各函数的调用顺序"></a>11.生命周期各函数的调用顺序</h1><p><img src="/2018/10/07/React生命周期/react-01.jpg" alt="img"></p>
-<ol>
-<li><code>getDefaultProps()</code>，调用1次</li>
-<li><code>getInitialState()</code>，调用1次</li>
-<li><code>componentWillMount()</code>，调用1次</li>
-<li><code>render()</code>，调用&gt;=1次</li>
-<li><code>componentDidMount()</code>：仅客户端，调用1次</li>
-<li><code>componentWillReceiveProps(object nextProps)</code>，调用&gt;=0次</li>
-<li><code>ShouldComponentUpdate(object nextProps, object nextState)</code>，调用&gt;=0次</li>
-<li><code>componentWillUpdate(object nextProps, object nextState)</code>，调用&gt;=0次</li>
-<li><code>render()</code>，调用&gt;=1次</li>
-<li><code>componentDidUpdate(object prevProps, object prevState)</code>，调用&gt;=0次</li>
-<li><code>componentWillUnmount()</code>，调用1次</li>
-</ol>
 
+ arrayUnique2(arr, &quot;name&quot;); 
+
+ /** [ { name: &#39;张三&#39;, num: &#39;1&#39; },
+  { name: &#39;李四&#39;, num: &#39;11&#39; },
+  { name: &#39;王五&#39;, num: &#39;12&#39; } ]  **/
+</code></pre><h3 id="1-2-for循环"><a href="#1-2-for循环" class="headerlink" title="1-2 for循环"></a>1-2 for循环</h3><p>借助对象访问属性的方法，判断属性是否存在，如果已存在则进行过滤</p>
+<pre><code>var arr = [
+    { name: &quot;张三&quot;, num: &quot;1&quot; },
+    { name: &quot;李四&quot;, num: &quot;11&quot; },
+    { name: &quot;王五&quot;, num: &quot;12&quot; },
+    { name: &quot;张三&quot;, num: &quot;13&quot; },
+    { name: &quot;李四&quot;, num: &quot;1&quot; },
+    { name: &quot;王五&quot;, num: &quot;12&quot; }
+  ]
+
+ function deleteSameItemInArray (targetArr,itemName=&#39;&#39;){
+    let obj = {},result=[]
+    targetArr.forEach((item,i)=&gt;{
+        if(!obj[item[itemName]]){
+            obj[item[itemName]] = true
+            result.push(item)
+        }
+    })
+    return result
+  }
+
+ let resultArr = deleteSameItemInArray(arr2,&#39;name&#39;)
+console.log(resultArr);
+</code></pre>
         
     
 
@@ -715,21 +930,13 @@ componentWillUnMount () {
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/01/02/开发中的一些踩坑记录/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/08/29/hexo搭建博客/" id="post_nav-older" class="next-content">
+        <a href="/2019/08/12/async-await和promise的区别/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
