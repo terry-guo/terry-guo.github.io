@@ -294,7 +294,7 @@ console.log(newArr); // [1,2,3]
 
 
 
-##2-2 arr.every()
+## 2-2 arr.every()
 
 > 定义和用法
 
@@ -337,7 +337,7 @@ console.log(c) // true
 
 
 
-## 2-13 arr.some()
+## 2-3 arr.some()
 
 > 定义和用法
 
